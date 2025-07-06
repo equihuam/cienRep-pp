@@ -1,13 +1,13 @@
 # Prefacio {.unnumbered}
 
 En este libro desarrollamos el contenido propuesto para un
-*curso/taller* sore el uso de [Quarto](https://quarto.org/docs/books).
+*curso/taller* de ciencia reproducible, basado en el uso de [Quarto](https://quarto.org/docs/books) y el *lenguaje R*.
 
 La intención es desarrollar una experiencia inmersiva sobre la
 incorporación de datos y el apopyo de evidencia en la construcción de
 instrumentos relevantes para la política pública en materia ambiental.
 Buscamos ofrecer al lector ejercicios con los que poner a prueba el uso
-de herramientas que propician el desarrollo de un enfoque reproducible.
+de herramientas que propician el desarrollo de un enfoque científico reproducible.
 
 Los ejercicio prácticos permitirán al lector hacer un recorrido a lo
 largo de la siguiente ruta:

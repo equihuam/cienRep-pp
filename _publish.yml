@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: f831cf59-b41e-4f9a-acf8-66d908ef9ae2
+      url: https://genuine-pika-7ac092.netlify.app
