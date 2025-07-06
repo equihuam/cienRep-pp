@@ -3,22 +3,27 @@
 En términos generales el contenido de una MIA de orden federal debe
 apegarse a lo especificado en el Reglamento de la LEGEPA en materia de
 Evaluación del Impacto Ambiental [@semarnat2014]. Ahí se especifica que
-pueden ser sólo de dos tipos: regionales o particulares. La que haremos
-como ensayo seguirá en términos generales el marco de un estudio *MIA*
-particular. Si se requiriera un poco más de especificidad recurriremos a
-la guía de una MIA Particular - Sector Turístico [@semarnat]. Con base
-en este marco normativo los capítulos que habrá que desarrollar a lo
-largo de los ejercicios propuestos son los siguientes.
+estos instrumentos pueden ser sólo de dos tipos: regionales o
+particulares. La que haremos como ensayo seguirá en términos generales
+el marco de un estudio *MIA* particular. Si se requiriera un poco más de
+especificidad recurriremos a la guía de una MIA Particular - Sector
+Turístico [@semarnat]. Con base en este marco normativo los capítulos
+que habrá que desarrollar a lo largo de los ejercicios propuestos son
+los siguientes.
 
-::: {.lista-romana}
+::: lista-romana
 1.  Datos generales del proyecto, del promovente y del responsable del
     estudio de impacto ambiental.
 2.  Descripción del proyecto;.
 3.  Vinculación con los ordenamientos jurídicos aplicables en materia
     ambiental y, en su caso, con la regulación sobre uso del suelo.
-4.  Descripción del sistema ambiental y señalamiento de la problemática ambiental detectada en el área de influencia del proyecto.
-5.  Identificación, descripción y evaluación de los impactos ambientales.
+4.  Descripción del sistema ambiental y señalamiento de la problemática
+    ambiental detectada en el área de influencia del proyecto.
+5.  Identificación, descripción y evaluación de los impactos
+    ambientales.
 6.  Medidas preventivas y de mitigación de los impactos ambientales.
 7.  Pronósticos ambientales y, en su caso, evaluación de alternativas.
-8.  Identificación de los instrumentos metodológicos y elementos técnicos que sustentan la información señalada en las fracciones anteriores.
+8.  Identificación de los instrumentos metodológicos y elementos
+    técnicos que sustentan la información señalada en las fracciones
+    anteriores.
 :::
