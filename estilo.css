@@ -2,3 +2,30 @@
 .lista-romana ol {
   list-style: upper-roman;
 }
+
+h1 {
+padding-bottom: 20px;
+color: #848484;
+}
+
+h2 {
+padding-top: 30px;
+color: #848484;
+}
+
+h3 {
+padding-top: 30px;
+color: #848484;
+}
+
+h4 {
+padding-top: 30px;
+color: #848484;
+}
+
+
+p {
+  padding-bottom: 10px;: ;
+}
+
+

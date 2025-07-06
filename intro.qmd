@@ -1,4 +1,4 @@
-# Introducción
+## Introducción
 
 En términos generales el contenido de una MIA de orden federal debe
 apegarse a lo especificado en el Reglamento de la LEGEPA en materia de
@@ -11,7 +11,7 @@ Turístico [@semarnat]. Con base en este marco normativo los capítulos
 que habrá que desarrollar a lo largo de los ejercicios propuestos son
 los siguientes.
 
-::: lista-romana
+::: {.lista-romana}
 1.  Datos generales del proyecto, del promovente y del responsable del
     estudio de impacto ambiental.
 2.  Descripción del proyecto;.
@@ -27,3 +27,59 @@ los siguientes.
     técnicos que sustentan la información señalada en las fracciones
     anteriores.
 :::
+
+
+
+## Flujo de trabajo
+
+El proceso de trabajo que utilizaremos se basa en el programa *RStudio*. Se trata de un *Entorno de Desarrollo Integrado* (**IDE**) que pemite la interacción entre el *lenguaje R*, *pandoc*, *git* y *Github* de una manera sencilla y eficiente. Inicia con la creación de un proyecto *Quarto book* en *Rstudio*, lo que genera un conjunto de archivos y carpetas dentro de la carpeta raíz del proyecto. Los principales componentes de esta etapa inicial son el archivo `_quarto.yml`, y la carpeta `_book`.
+
+
+El primero es un *documento de control y metadatos*. Define loas atributos generales del libro y datos como autores, fechas, idioma, etc. La carpeta contendrá el libro producido en los formato de publicación que especifiques. Los nombres de estos dos elementos no los debes modificar nunca. *RStudio* crea además algunos archivos de ejemplo para ilustrar lo que puede ser el contenido del libro: `intro.qmd`, `summary.qmd` y una coleción de datos de referencias documentales: `references.bib`, los que también se anotan en el archivo de control. Los nombres de estos archivos pueden ser los que tu prefieras, pero te sugiero mantenerlos cortos y no incluir caracteres latinos. Piensa que deben ser fáciles de procesar por una computadora, no tanto inteligibles por seres humanos.
+  
+
+  ### Archivo de configuración `_quarto.yml` .
+  
+  Este archivo contiene la configuración inicial de tu libro. En un principio puede tener un contenido como el siguiente: 
+
+
+```yaml
+
+project: 
+type: book
+
+book: 
+  title: "mybook" 
+  author: "Juanita Staku" 
+  date: "8/18/2021"
+  chapters: 
+    - index.qmd 
+    - intro.qmd 
+    - summary.qmd 
+    - references.qmd
+
+bibliography: references.bib
+
+format: html: 
+  tema: cosmo
+
+pdf: 
+  documentclass: scrreprt
+
+epub: 
+  cover-image: cover.png 
+
+```
+
+
+### Previsualizar el libro
+
+En cualquier momento puedes producir una *vista previa* de tu documento.
+Lo único que hay que hacer es activar el **botón render** en *RStudio*
+
+If you are using VS Code or RStudio, the Preview button (VS Code), or
+Render button (RStudio), automatically renders and runs quarto preview
+in an embedded window. You can also do the same thing from the Terminal
+if need be:
+
+Terminal \# preview the book in the current directory quarto preview

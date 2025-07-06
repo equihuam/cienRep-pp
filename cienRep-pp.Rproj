@@ -14,7 +14,4 @@ LaTeX: pdfLaTeX
 
 UseNativePipeOperator: Yes
 
-MarkdownWrap: Column
-MarkdownWrapAtColumn: 72
-
 ZoteroLibraries: "CienRepro-PP"
