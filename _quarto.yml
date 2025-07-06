@@ -6,6 +6,7 @@ always_allow_html: yes
 cover-image: img/leaves-2874583_1280.jpg
 bibliography: referencias.bib
 csl: apa.csl
+css: estilo.scss
 
 citation: 
   type: book

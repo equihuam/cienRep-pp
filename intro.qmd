@@ -10,6 +10,7 @@ la guía de una MIA Particular - [Sector Turístico](https://www.gob.mx/cms/uplo
 en este marco normativo los capítulos que habrá que desarrollar a lo
 largo de los ejercicios propuestos son los siguientes.
 
+::: {.lista-romana}
 1.  Datos generales del proyecto, del promovente y del responsable del
     estudio de impacto ambiental.
 2.  Descripción del proyecto;.
@@ -20,3 +21,4 @@ largo de los ejercicios propuestos son los siguientes.
 6.  Medidas preventivas y de mitigación de los impactos ambientales.
 7.  Pronósticos ambientales y, en su caso, evaluación de alternativas.
 8.  Identificación de los instrumentos metodológicos y elementos técnicos que sustentan la información señalada en las fracciones anteriores.
+:::
