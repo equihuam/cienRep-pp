@@ -201,7 +201,8 @@ div.csl-indent {
   <ul>
   <li><a href="#flujo-de-trabajo" id="toc-flujo-de-trabajo" class="nav-link active" data-scroll-target="#flujo-de-trabajo"><span class="header-section-number">1.1</span> Flujo de trabajo</a>
   <ul class="collapse">
-  <li><a href="#previsualizar-el-libro" id="toc-previsualizar-el-libro" class="nav-link" data-scroll-target="#previsualizar-el-libro"><span class="header-section-number">1.1.1</span> Previsualizar el libro</a></li>
+  <li><a href="#archivo-de-configuración-_quarto.yml-." id="toc-archivo-de-configuración-_quarto.yml-." class="nav-link" data-scroll-target="#archivo-de-configuración-_quarto.yml-."><span class="header-section-number">1.1.1</span> Archivo de configuración <code>_quarto.yml</code> .</a></li>
+  <li><a href="#previsualizar-el-libro" id="toc-previsualizar-el-libro" class="nav-link" data-scroll-target="#previsualizar-el-libro"><span class="header-section-number">1.1.2</span> Previsualizar el libro</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -244,8 +245,9 @@ div.csl-indent {
 <section id="flujo-de-trabajo" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="flujo-de-trabajo"><span class="header-section-number">1.1</span> Flujo de trabajo</h2>
 <p>El proceso de trabajo que utilizaremos se basa en el programa <em>RStudio</em>. Se trata de un <em>Entorno de Desarrollo Integrado</em> (<strong>IDE</strong>) que pemite la interacción entre el <em>lenguaje R</em>, <em>pandoc</em>, <em>git</em> y <em>Github</em> de una manera sencilla y eficiente. Inicia con la creación de un proyecto <em>Quarto book</em> en <em>Rstudio</em>, lo que genera un conjunto de archivos y carpetas dentro de la carpeta raíz del proyecto. Los principales componentes de esta etapa inicial son el archivo <code>_quarto.yml</code>, y la carpeta <code>_book</code>.</p>
-<p>El primero es un <em>documento de control y metadatos</em>. Define loas atributos generales del libro y datos como autores, fechas, idioma, etc. La carpeta contendrá el libro producido en los formato de publicación que especifiques. Los nombres de estos dos elementos no los debes modificar nunca. <em>RStudio</em> crea además algunos archivos de ejemplo para ilustrar lo que puede ser el contenido del libro: <code>intro.qmd</code>, <code>summary.qmd</code> y una coleción de datos de referencias documentales: <code>references.bib</code>, los que también se anotan en el archivo de control. Los nombres de estos archivos pueden ser los que tu prefieras, pero te sugiero mantenerlos cortos y no incluir caracteres latinos. Piensa que deben ser fáciles de procesar por una computadora, no tanto inteligibles por seres humanos.</p>
-<p>### Archivo de configuración <code>_quarto.yml</code> .</p>
+<p>El primero es un <em>documento de control y metadatos</em>. Define los atributos generales del libro y datos como autores, fechas, idioma, etc. La carpeta contendrá el libro producido en los formato de publicación que especifiques. Los nombres de estos dos elementos no los debes modificar nunca. <em>RStudio</em> crea además algunos archivos de ejemplo para ilustrar lo que puede ser el contenido del libro: <code>intro.qmd</code>, <code>summary.qmd</code> y una coleción de datos de referencias documentales: <code>references.bib</code>, los que también se anotan en el archivo de control. Los nombres de estos archivos pueden ser los que tu prefieras, pero te sugiero mantenerlos cortos y no incluir caracteres latinos. Piensa que deben ser fáciles de procesar por una computadora, no tanto inteligibles por seres humanos.</p>
+<section id="archivo-de-configuración-_quarto.yml-." class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="archivo-de-configuración-_quarto.yml-."><span class="header-section-number">1.1.1</span> Archivo de configuración <code>_quarto.yml</code> .</h3>
 <p>Este archivo contiene la configuración inicial de tu libro. En un principio puede tener un contenido como el siguiente:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span><span class="at"> </span></span>
@@ -271,11 +273,10 @@ div.csl-indent {
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">epub</span><span class="kw">:</span><span class="at"> </span></span>
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">cover-image</span><span class="kw">:</span><span class="at"> cover.png </span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<section id="previsualizar-el-libro" class="level3" data-number="1.1.1">
-<h3 data-number="1.1.1" class="anchored" data-anchor-id="previsualizar-el-libro"><span class="header-section-number">1.1.1</span> Previsualizar el libro</h3>
-<p>En cualquier momento puedes producir una <em>vista previa</em> de tu documento. Lo único que hay que hacer es activar el <strong>botón render</strong> en <em>RStudio</em></p>
-<p>If you are using VS Code or RStudio, the Preview button (VS Code), or Render button (RStudio), automatically renders and runs quarto preview in an embedded window. You can also do the same thing from the Terminal if need be:</p>
-<p>Terminal # preview the book in the current directory quarto preview</p>
+</section>
+<section id="previsualizar-el-libro" class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="previsualizar-el-libro"><span class="header-section-number">1.1.2</span> Previsualizar el libro</h3>
+<p>En cualquier momento puedes producir una <em>vista previa</em> de tu documento. Lo único que hay que hacer es activar el <strong>botón render</strong> en <em>RStudio</em>. Como la ista previa la realiza <em>quarto</em> con ayuda de <em>pandoc</em>, podemos también hacerlo directamente desde una ventana de terminal (la integrada en <em>RStudio</em> o la que puedas abrir por separado en tu equipo). Ahí sólo tendrás que asegurarte de estar ubicada en la carpeta de tu proyecto y proporcionar el siguiente comando: <code>quarto preview</code>. ¡Eso es todo!</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">

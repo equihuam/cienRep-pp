@@ -1,15 +1,6 @@
 ## Introducción
 
-En términos generales el contenido de una MIA de orden federal debe
-apegarse a lo especificado en el Reglamento de la LEGEPA en materia de
-Evaluación del Impacto Ambiental [@semarnat2014]. Ahí se especifica que
-estos instrumentos pueden ser sólo de dos tipos: regionales o
-particulares. La que haremos como ensayo seguirá en términos generales
-el marco de un estudio *MIA* particular. Si se requiriera un poco más de
-especificidad recurriremos a la guía de una MIA Particular - Sector
-Turístico [@semarnat]. Con base en este marco normativo los capítulos
-que habrá que desarrollar a lo largo de los ejercicios propuestos son
-los siguientes.
+En términos generales el contenido de una MIA de orden federal debe apegarse a lo especificado en el Reglamento de la LEGEPA en materia de Evaluación del Impacto Ambiental [@semarnat2014]. Ahí se especifica que estos instrumentos pueden ser sólo de dos tipos: regionales o particulares. La que haremos como ensayo seguirá en términos generales el marco de un estudio *MIA* particular. Si se requiriera un poco más de especificidad recurriremos a la guía de una MIA Particular - Sector Turístico [@semarnat]. Con base en este marco normativo los capítulos que habrá que desarrollar a lo largo de los ejercicios propuestos son los siguientes.
 
 ::: {.lista-romana}
 1.  Datos generales del proyecto, del promovente y del responsable del
@@ -35,10 +26,10 @@ los siguientes.
 El proceso de trabajo que utilizaremos se basa en el programa *RStudio*. Se trata de un *Entorno de Desarrollo Integrado* (**IDE**) que pemite la interacción entre el *lenguaje R*, *pandoc*, *git* y *Github* de una manera sencilla y eficiente. Inicia con la creación de un proyecto *Quarto book* en *Rstudio*, lo que genera un conjunto de archivos y carpetas dentro de la carpeta raíz del proyecto. Los principales componentes de esta etapa inicial son el archivo `_quarto.yml`, y la carpeta `_book`.
 
 
-El primero es un *documento de control y metadatos*. Define loas atributos generales del libro y datos como autores, fechas, idioma, etc. La carpeta contendrá el libro producido en los formato de publicación que especifiques. Los nombres de estos dos elementos no los debes modificar nunca. *RStudio* crea además algunos archivos de ejemplo para ilustrar lo que puede ser el contenido del libro: `intro.qmd`, `summary.qmd` y una coleción de datos de referencias documentales: `references.bib`, los que también se anotan en el archivo de control. Los nombres de estos archivos pueden ser los que tu prefieras, pero te sugiero mantenerlos cortos y no incluir caracteres latinos. Piensa que deben ser fáciles de procesar por una computadora, no tanto inteligibles por seres humanos.
+El primero es un *documento de control y metadatos*. Define los atributos generales del libro y datos como autores, fechas, idioma, etc. La carpeta contendrá el libro producido en los formato de publicación que especifiques. Los nombres de estos dos elementos no los debes modificar nunca. *RStudio* crea además algunos archivos de ejemplo para ilustrar lo que puede ser el contenido del libro: `intro.qmd`, `summary.qmd` y una coleción de datos de referencias documentales: `references.bib`, los que también se anotan en el archivo de control. Los nombres de estos archivos pueden ser los que tu prefieras, pero te sugiero mantenerlos cortos y no incluir caracteres latinos. Piensa que deben ser fáciles de procesar por una computadora, no tanto inteligibles por seres humanos.
   
 
-  ### Archivo de configuración `_quarto.yml` .
+### Archivo de configuración `_quarto.yml` .
   
   Este archivo contiene la configuración inicial de tu libro. En un principio puede tener un contenido como el siguiente: 
 
@@ -75,11 +66,8 @@ epub:
 ### Previsualizar el libro
 
 En cualquier momento puedes producir una *vista previa* de tu documento.
-Lo único que hay que hacer es activar el **botón render** en *RStudio*
+Lo único que hay que hacer es activar el **botón render** en *RStudio*.
+Como la ista previa la realiza *quarto* con ayuda de *pandoc*, podemos también hacerlo directamente desde una ventana de terminal (la integrada en *RStudio* o la que puedas abrir por separado en tu equipo). Ahí sólo tendrás que asegurarte de estar ubicada en la carpeta de tu proyecto y proporcionar el siguiente comando: `quarto preview`. ¡Eso es todo!
 
-If you are using VS Code or RStudio, the Preview button (VS Code), or
-Render button (RStudio), automatically renders and runs quarto preview
-in an embedded window. You can also do the same thing from the Terminal
-if need be:
 
-Terminal \# preview the book in the current directory quarto preview
+
