@@ -32,7 +32,7 @@ book:
 
 format:
   html:
-    theme: materia
+    theme: minty
     
   pdf:
     prefer-html: true
