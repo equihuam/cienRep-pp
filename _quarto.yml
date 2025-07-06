@@ -1,0 +1,39 @@
+project:
+  type: book
+  
+lang: es
+always_allow_html: yes
+cover-image: img/leaves-2874583_1280.jpg
+bibliography: referencias.bib
+csl: apa.csl
+
+citation: 
+  type: book
+  
+
+book:
+  title: "Ciencia reproducible para la política pública"
+  author:
+     - name: Miguel Equihua Zamora
+       affiliation: Ambiente y Sustetabilidad, Inecol, México
+     - name: Octavio Pérez-Maqueo
+     - name: Elio Lagunes Díaz
+  date: "5/7/2025"
+  downloads: [pdf]
+  favicon: img/box-2071537_640.png
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - resumen.qmd
+    - referencias.qmd
+    
+  cover-image: img/leaves-2874583_1280.jpg
+
+format:
+  html:
+    theme: materia
+    
+  pdf:
+    prefer-html: true
+    
+
