@@ -4,7 +4,7 @@ En este libro desarrollamos el contenido propuesto para un
 *curso/taller* de ciencia reproducible, basado en el uso de [Quarto](https://quarto.org/docs/books) y el *lenguaje R*.
 
 La intención es desarrollar una experiencia inmersiva sobre la
-incorporación de datos y el apopyo de evidencia en la construcción de
+incorporación de datos y el apoyo de evidencia en la construcción de
 instrumentos relevantes para la política pública en materia ambiental.
 Buscamos ofrecer al lector ejercicios con los que poner a prueba el uso
 de herramientas que propician el desarrollo de un enfoque científico reproducible.
@@ -13,21 +13,21 @@ Los ejercicio prácticos permitirán al lector hacer un recorrido a lo
 largo de la siguiente ruta:
 
 1.  Uso de *Quarto*. Lo proponemos como base de encuentro de la
-    proucción de contenido en texto, análisis computacional y gráficos
+    producción de contenido en texto, análisis computacional y gráficos
     de datos, en un sólo espacio.
-2.  Uo de *Git*, [Github](http://www.github.com) y
+2.  Uso de *Git*, [Github](http://www.github.com) y
     [Netlify](http://www.netlify.com). Se trata de recursos convenientes
     para el control del proceso de desarrollo de contenidos y para la
     publicación en línea.
-3.  Introducción al uso del *lenguaje R* como base de contrucción de
-    algorítmos computacionales.
-4.  Uso de *R* par el procesamiento de datos geoespaciales, análisis de
+3.  Introducción al uso del *lenguaje R* como base de construcción de
+    algoritmos computacionales.
+4.  Uso de *R* para el procesamiento de datos geoespaciales, análisis de
     cartografía y producción de mapas.
 
-Con base en estos elementoes desarrollaremos, paso a paso los
-componentes necesarios para integrar, a manera de ejemplo, un documeno
+Con base en estos elementos desarrollaremos, paso a paso, los
+componentes necesarios para integrar, a manera de ejemplo, un documento
 tipo *Manifiesto de Impacto Ambiental* (**MIA**). Lo haremos con un
-[apego genérico a lo que se suele hacer en México en el orden
+apego genérico a lo que se suele hacer en [México en el orden
 federal](https://www.gob.mx/semarnat/documentos/guias-de-impacto-ambiental),
-pero la experiencia es facilmente extrapolable a la práctica de
+pero la experiencia es fácilmente extrapolable a la práctica de
 cualquier otro nivel administrativo e incluso cualquier país del mundo.
