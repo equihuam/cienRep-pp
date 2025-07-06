@@ -6,7 +6,7 @@ Evaluación del Impacto Ambiental [@semarnat2014]. Ahí se especifica que
 pueden ser sólo de dos tipos: regionales o particulares. La que haremos
 como ensayo seguirá en términos generales el marco de un estudio *MIA*
 particular. Si se requiriera un poco más de especificidad recurriremos a
-la guía de una MIA Particular - [Sector Turístico](https://www.gob.mx/cms/uploads/attachment/file/121010/Guia_MIA-Particular_Turistico.pdf) [@semarnat]. Con base
+la guía de una MIA Particular - Sector Turístico [@semarnat]. Con base
 en este marco normativo los capítulos que habrá que desarrollar a lo
 largo de los ejercicios propuestos son los siguientes.
 
