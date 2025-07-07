@@ -13,7 +13,7 @@ En términos generales el contenido de una MIA de orden federal debe apegarse a 
 8.  Identificación de los instrumentos metodológicos y elementos técnicos que sustentan la información señalada en las fracciones anteriores.
 :::
 
-### RStudio
+## RStudio
 
 Es un *entorno integrado de desarrollo* (**IDE**). El proceso de trabajo que utilizaremos se basa en el programa *RStudio*. Se trata de un *Entorno de Desarrollo Integrado* (**IDE**) que pemite la interacción entre el *lenguaje R*, *pandoc*, *git* y *Github* de una manera sencilla y eficiente. Además, ofrece una estructura que permite interactuar con distintos aspecto del proceso creativo. En la figura puedes ver lo que usualmente tienes a tu alcance en una instalación común. Esta configuración la puedes modificar según tus preferencias desde el menú *View* ⟹ *panes*. Pero probablemente al inicio te bastará con la configuración que ya tienes.
 
