@@ -4,10 +4,7 @@
     "href": "index.html",
     "title": "Ciencia reproducible para la política pública",
     "section": "",
-    "text": "Prefacio\nEn este libro desarrollamos el contenido propuesto para un curso/taller de ciencia reproducible, basado en el uso de Quarto y el lenguaje R.\nLa intención es desarrollar una experiencia inmersiva sobre la incorporación de datos y el apoyo de evidencia en la construcción de instrumentos relevantes para la política pública en materia ambiental. Buscamos ofrecer al lector ejercicios con los que poner a prueba el uso de herramientas que propician el desarrollo de un enfoque científico reproducible.\nLos ejercicio prácticos permitirán al lector hacer un recorrido a lo largo de la siguiente ruta:\n\nUso de Quarto. Lo proponemos como base de encuentro de la producción de contenido en texto, análisis computacional y gráficos de datos, en un sólo espacio.\nUso de Git, Github y Netlify. Se trata de recursos convenientes para el control del proceso de desarrollo de contenidos y para la publicación en línea.\nIntroducción al uso del lenguaje R como base de construcción de algoritmos computacionales.\nUso de R para el procesamiento de datos geoespaciales, análisis de cartografía y producción de mapas.\n\nCon base en estos elementos desarrollaremos, paso a paso, los componentes necesarios para integrar, a manera de ejemplo, un documento tipo Manifiesto de Impacto Ambiental (MIA). Lo haremos con un apego genérico a lo que se suele hacer en México en el orden federal, pero la experiencia es fácilmente extrapolable a la práctica de cualquier otro nivel administrativo e incluso cualquier país del mundo.",
-    "crumbs": [
-      "Prefacio"
-    ]
+    "text": "Prefacio\nEn este libro desarrollamos el contenido propuesto para un curso/taller de ciencia reproducible, basado en el uso de Quarto y el lenguaje R.\nLa intención es desarrollar una experiencia inmersiva sobre la incorporación de datos y el apoyo de evidencia en la construcción de instrumentos relevantes para la política pública en materia ambiental. Buscamos ofrecer al lector ejercicios con los que poner a prueba el uso de herramientas que propician el desarrollo de un enfoque científico reproducible.\nLos ejercicio prácticos permitirán al lector hacer un recorrido a lo largo de la siguiente ruta:\n\nUso de Quarto. Lo proponemos como base de encuentro de la producción de contenido en texto, análisis computacional y gráficos de datos, en un sólo espacio.\nUso de Git, Github y Netlify. Se trata de recursos convenientes para el control del proceso de desarrollo de contenidos y para la publicación en línea.\nIntroducción al uso del lenguaje R como base de construcción de algoritmos computacionales.\nUso de R para el procesamiento de datos geoespaciales, análisis de cartografía y producción de mapas.\n\nCon base en estos elementos desarrollaremos, paso a paso, los componentes necesarios para integrar, a manera de ejemplo, un documento tipo Manifiesto de Impacto Ambiental (MIA). Lo haremos con un apego genérico a lo que se suele hacer en México en el orden federal, pero la experiencia es fácilmente extrapolable a la práctica de cualquier otro nivel administrativo e incluso cualquier país del mundo."
   },
   {
     "objectID": "intro.html",
@@ -24,29 +21,20 @@
     "href": "resumen.html",
     "title": "2  Resumen",
     "section": "",
-    "text": "Por lo pronto no tenemos nada que decir",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Resumen</span>"
-    ]
+    "text": "Por lo pronto no tenemos nada que decir"
   },
   {
     "objectID": "referencias.html",
     "href": "referencias.html",
     "title": "Referencias",
     "section": "",
-    "text": "SEMARNAT. (2014). Reglamento de la Ley General del Equilibrio\nEcológico y la Protección al Ambiente en materia de Evaluación del\nImpacto Ambiental. https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LGEEPA_MEIA_311014.pdf\n\n\nSEMARNAT. (2022). Guia MIA Particular - Sector Turistico. https://www.gob.mx/cms/uploads/attachment/file/121010/Guia_MIA-Particular_Turistico.pdf",
-    "crumbs": [
-      "Referencias"
-    ]
+    "text": "SEMARNAT. (2014). Reglamento de la Ley General del Equilibrio\nEcológico y la Protección al Ambiente en materia de Evaluación del\nImpacto Ambiental. https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LGEEPA_MEIA_311014.pdf\n\n\nSEMARNAT. (2022). Guia MIA Particular - Sector Turistico. https://www.gob.mx/cms/uploads/attachment/file/121010/Guia_MIA-Particular_Turistico.pdf"
   },
   {
     "objectID": "intro.html#flujo-de-trabajo",
     "href": "intro.html#flujo-de-trabajo",
     "title": "1  Introducción",
-    "section": "",
-    "text": "1.1.1 Archivo de configuración _quarto.yml .\nEste archivo contiene la configuración inicial de tu libro. En un principio puede tener un contenido como el siguiente:\n\nproject: \ntype: book\n\nbook: \n  title: \"mybook\" \n  author: \"Juanita Staku\" \n  date: \"8/18/2021\"\n  chapters: \n    - index.qmd \n    - intro.qmd \n    - summary.qmd \n    - references.qmd\n\nbibliography: references.bib\n\nformat: html: \n  tema: cosmo\n\npdf: \n  documentclass: scrreprt\n\nepub: \n  cover-image: cover.png \n\n\n1.1.2 Previsualizar el libro\nEn cualquier momento puedes producir una vista previa de tu documento. Lo único que hay que hacer es activar el botón render en RStudio. Como la ista previa la realiza quarto con ayuda de pandoc, podemos también hacerlo directamente desde una ventana de terminal (la integrada en RStudio o la que puedas abrir por separado en tu equipo). Ahí sólo tendrás que asegurarte de estar ubicada en la carpeta de tu proyecto y proporcionar el siguiente comando: quarto preview. ¡Eso es todo!\n\n\n\n\nSEMARNAT. (2014). Reglamento de la Ley General del Equilibrio Ecológico y la Protección al Ambiente en materia de Evaluación del Impacto Ambiental. https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LGEEPA_MEIA_311014.pdf\n\n\nSEMARNAT. (2022). Guia MIA Particular - Sector Turistico. https://www.gob.mx/cms/uploads/attachment/file/121010/Guia_MIA-Particular_Turistico.pdf",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introducción</span>"
-    ]
+    "section": "1.1 Flujo de trabajo",
+    "text": "1.1 Flujo de trabajo\nEl proceso de trabajo que utilizaremos se basa en el programa RStudio. Se trata de un Entorno de Desarrollo Integrado (IDE) que pemite la interacción entre el lenguaje R, pandoc, git y Github de una manera sencilla y eficiente. Inicia con la creación de un proyecto Quarto book en Rstudio, lo que genera un conjunto de archivos y carpetas dentro de la carpeta raíz del proyecto. Los principales componentes de esta etapa inicial son el archivo _quarto.yml, y la carpeta _book.\nEl primero es un documento de control y metadatos. Define los atributos generales del libro y datos como autores, fechas, idioma, etc. La carpeta contendrá el libro producido en los formato de publicación que especifiques. Los nombres de estos dos elementos no los debes modificar nunca. RStudio crea además algunos archivos de ejemplo para ilustrar lo que puede ser el contenido del libro: intro.qmd, summary.qmd y una coleción de datos de referencias documentales: references.bib, los que también se anotan en el archivo de control. Los nombres de estos archivos pueden ser los que tu prefieras, pero te sugiero mantenerlos cortos y no incluir caracteres latinos. Piensa que deben ser fáciles de procesar por una computadora, no tanto inteligibles por seres humanos.\n\n1.1.1 Archivo de configuración _quarto.yml .\nEste archivo contiene la configuración inicial de tu libro. En un principio puede tener un contenido como el siguiente:\n\nproject: \ntype: book\n\nbook: \n  title: \"mybook\" \n  author: \"Juanita Staku\" \n  date: \"8/18/2021\"\n  chapters: \n    - index.qmd \n    - intro.qmd \n    - summary.qmd \n    - references.qmd\n\nbibliography: references.bib\n\nformat: html: \n  tema: cosmo\n\npdf: \n  documentclass: scrreprt\n\nepub: \n  cover-image: cover.png \n\n\n1.1.2 Previsualizar el libro\nEn cualquier momento puedes producir una vista previa de tu documento. Lo único que hay que hacer es activar el botón render en RStudio. Como la ista previa la realiza quarto con ayuda de pandoc, podemos también hacerlo directamente desde una ventana de terminal (la integrada en RStudio o la que puedas abrir por separado en tu equipo). Ahí sólo tendrás que asegurarte de estar ubicada en la carpeta de tu proyecto y proporcionar el siguiente comando: quarto preview. ¡Eso es todo!\n\n\n\n\nSEMARNAT. (2014). Reglamento de la Ley General del Equilibrio Ecológico y la Protección al Ambiente en materia de Evaluación del Impacto Ambiental. https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LGEEPA_MEIA_311014.pdf\n\n\nSEMARNAT. (2022). Guia MIA Particular - Sector Turistico. https://www.gob.mx/cms/uploads/attachment/file/121010/Guia_MIA-Particular_Turistico.pdf"
   }
 ]

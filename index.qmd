@@ -30,4 +30,4 @@ tipo *Manifiesto de Impacto Ambiental* (**MIA**). Lo haremos con un
 apego genérico a lo que se suele hacer en [México en el orden
 federal](https://www.gob.mx/semarnat/documentos/guias-de-impacto-ambiental),
 pero la experiencia es fácilmente extrapolable a la práctica de
-cualquier otro nivel administrativo e incluso cualquier país del mundo.
+cualquier otro nivel administrativo e incluso cualquier país del mundo. Incluso para el desarrollo de otros documentos considerados dentro de la política pública como ordenamientos, planes de manejo, etc.    
