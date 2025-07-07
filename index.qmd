@@ -1,33 +1,30 @@
 # Prefacio {.unnumbered}
 
-En este libro desarrollamos el contenido propuesto para un
-*curso/taller* de ciencia reproducible, basado en el uso de [Quarto](https://quarto.org/docs/books) y el *lenguaje R*.
+## Herramientas que usaremos
 
-La intención es desarrollar una experiencia inmersiva sobre la
-incorporación de datos y el apoyo de evidencia en la construcción de
-instrumentos relevantes para la política pública en materia ambiental.
-Buscamos ofrecer al lector ejercicios con los que poner a prueba el uso
-de herramientas que propician el desarrollo de un enfoque científico reproducible.
+En este libro desarrollamos el contenido propuesto para un *curso/taller* de ciencia reproducible, basado en el uso de [Quarto](https://quarto.org/docs/books) y el *lenguaje R*.  
 
-Los ejercicio prácticos permitirán al lector hacer un recorrido a lo
-largo de la siguiente ruta:
+La intención es desarrollar una experiencia inmersiva sobre la incorporación de datos y el apoyo de evidencia en la construcción de instrumentos relevantes para la política pública en materia ambiental. Buscamos ofrecer al lector ejercicios con los que poner a prueba el uso de herramientas que propician el desarrollo de un enfoque científico reproducible.  
 
-1.  Uso de *Quarto*. Lo proponemos como base de encuentro de la
-    producción de contenido en texto, análisis computacional y gráficos
-    de datos, en un sólo espacio.
-2.  Uso de *Git*, [Github](http://www.github.com) y
-    [Netlify](http://www.netlify.com). Se trata de recursos convenientes
-    para el control del proceso de desarrollo de contenidos y para la
-    publicación en línea.
-3.  Introducción al uso del *lenguaje R* como base de construcción de
-    algoritmos computacionales.
-4.  Uso de *R* para el procesamiento de datos geoespaciales, análisis de
-    cartografía y producción de mapas.
+Los ejercicio prácticos permitirán al lector hacer un recorrido a lo largo de la siguiente ruta:
 
-Con base en estos elementos desarrollaremos, paso a paso, los
-componentes necesarios para integrar, a manera de ejemplo, un documento
-tipo *Manifiesto de Impacto Ambiental* (**MIA**). Lo haremos con un
-apego genérico a lo que se suele hacer en [México en el orden
-federal](https://www.gob.mx/semarnat/documentos/guias-de-impacto-ambiental),
-pero la experiencia es fácilmente extrapolable a la práctica de
-cualquier otro nivel administrativo e incluso cualquier país del mundo.
+1.  Uso de *Quarto*. Lo proponemos como base de encuentro de la producción de contenido en texto, análisis computacional y gráficos de datos, en un sólo espacio.
+2.  Uso de *Git*, [Github](http://www.github.com) y [Netlify](http://www.netlify.com). Se trata de recursos convenientes para el control del proceso de desarrollo de contenidos y para la publicación en línea.
+3.  Introducción al uso del *lenguaje R* como base de construcción de algoritmos computacionales para análisis de datos.
+4.  Uso de *R* para el procesamiento de datos geoespaciales, análisis de cartografía y producción de mapas.
+
+Con base en estos elementos desarrollaremos, paso a paso, los componentes necesarios para integrar, a manera de ejemplo, un documento tipo *Manifiesto de Impacto Ambiental* (**MIA**). Lo haremos con un apego genérico a lo que se suele hacer en [México en el orden federal](https://www.gob.mx/semarnat/documentos/guias-de-impacto-ambiental), pero la experiencia es fácilmente extrapolable a la práctica de cualquier otro nivel administrativo e incluso cualquier país del mundo.
+
+
+## Ciencia reproducible y abierta
+
+En el movimiento social que nos invita a reflexionar sobre la *ciencia abierta*, hay quienes sostenemos que el conocimiento y el proceso creativo que lo impulsa debe ser lo más libre posible. El talento y la sabiduría su núcleo. Sobre todo en áreas como la salud y la calidad del entorno ecológico en el que vivimos. La ciencia abierta también nos plantea la necesidad de cuidar la confiabilidad de los datos, pues una *buena ciencia exigue buenos datos*. Otro aspecto importante, además de los datos, es la forma como los analizamos. Lo usual es confiar en sus propiedades estadísticas para llegar a conclusiones, así que los algorítmos y procedimientos estadísticos empleados son otro componente que debe ser transparente. 
+
+La meticulosidad y apertura con la que abordemops estos asuntos tiene un impacto definitivo sobre la posibilidad de que otras personas puedan llegar a similares conclusiones que las nuestras, lo que abona a la noción de *objetividad científica*, y es una de las razones que nos lleva a confiar en la ciencia al tomar decisiones.
+
+
+
+
+
+
+

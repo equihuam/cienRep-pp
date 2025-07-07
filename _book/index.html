@@ -33,7 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
+<link href="./primeros-pasos.html" rel="next">
 <link href="./img/box-2071537_640.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -121,14 +121,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+  <a href="./primeros-pasos.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./git-basico.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Git: lo básico</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./resumen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Resumen</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Resumen</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -147,7 +153,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#prefacio" id="toc-prefacio" class="nav-link active" data-scroll-target="#prefacio">Prefacio</a></li>
+  <li><a href="#prefacio" id="toc-prefacio" class="nav-link active" data-scroll-target="#prefacio">Prefacio</a>
+  <ul class="collapse">
+  <li><a href="#herramientas-que-usaremos" id="toc-herramientas-que-usaremos" class="nav-link" data-scroll-target="#herramientas-que-usaremos">Herramientas que usaremos</a></li>
+  <li><a href="#ciencia-reproducible-y-abierta" id="toc-ciencia-reproducible-y-abierta" class="nav-link" data-scroll-target="#ciencia-reproducible-y-abierta">Ciencia reproducible y abierta</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -205,18 +215,26 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="prefacio" class="level1 unnumbered">
 <h1 class="unnumbered">Prefacio</h1><p><img src="img/leaves-2874583_1280.jpg" title="Ciencia reproducible para la política pública" class="quarto-cover-image img-fluid"></p>
+<section id="herramientas-que-usaremos" class="level2">
+<h2 class="anchored" data-anchor-id="herramientas-que-usaremos">Herramientas que usaremos</h2>
 <p>En este libro desarrollamos el contenido propuesto para un <em>curso/taller</em> de ciencia reproducible, basado en el uso de <a href="https://quarto.org/docs/books">Quarto</a> y el <em>lenguaje R</em>.</p>
 <p>La intención es desarrollar una experiencia inmersiva sobre la incorporación de datos y el apoyo de evidencia en la construcción de instrumentos relevantes para la política pública en materia ambiental. Buscamos ofrecer al lector ejercicios con los que poner a prueba el uso de herramientas que propician el desarrollo de un enfoque científico reproducible.</p>
 <p>Los ejercicio prácticos permitirán al lector hacer un recorrido a lo largo de la siguiente ruta:</p>
 <ol type="1">
 <li>Uso de <em>Quarto</em>. Lo proponemos como base de encuentro de la producción de contenido en texto, análisis computacional y gráficos de datos, en un sólo espacio.</li>
 <li>Uso de <em>Git</em>, <a href="http://www.github.com">Github</a> y <a href="http://www.netlify.com">Netlify</a>. Se trata de recursos convenientes para el control del proceso de desarrollo de contenidos y para la publicación en línea.</li>
-<li>Introducción al uso del <em>lenguaje R</em> como base de construcción de algoritmos computacionales.</li>
+<li>Introducción al uso del <em>lenguaje R</em> como base de construcción de algoritmos computacionales para análisis de datos.</li>
 <li>Uso de <em>R</em> para el procesamiento de datos geoespaciales, análisis de cartografía y producción de mapas.</li>
 </ol>
 <p>Con base en estos elementos desarrollaremos, paso a paso, los componentes necesarios para integrar, a manera de ejemplo, un documento tipo <em>Manifiesto de Impacto Ambiental</em> (<strong>MIA</strong>). Lo haremos con un apego genérico a lo que se suele hacer en <a href="https://www.gob.mx/semarnat/documentos/guias-de-impacto-ambiental">México en el orden federal</a>, pero la experiencia es fácilmente extrapolable a la práctica de cualquier otro nivel administrativo e incluso cualquier país del mundo.</p>
+</section>
+<section id="ciencia-reproducible-y-abierta" class="level2">
+<h2 class="anchored" data-anchor-id="ciencia-reproducible-y-abierta">Ciencia reproducible y abierta</h2>
+<p>En el movimiento social que nos invita a reflexionar sobre la <em>ciencia abierta</em>, hay quienes sostenemos que el conocimiento y el proceso creativo que lo impulsa debe ser lo más libre posible. El talento y la sabiduría su núcleo. Sobre todo en áreas como la salud y la calidad del entorno ecológico en el que vivimos. La ciencia abierta también nos plantea la necesidad de cuidar la confiabilidad de los datos, pues una <em>buena ciencia exigue buenos datos</em>. Otro aspecto importante, además de los datos, es la forma como los analizamos. Lo usual es confiar en sus propiedades estadísticas para llegar a conclusiones, así que los algorítmos y procedimientos estadísticos empleados son otro componente que debe ser transparente.</p>
+<p>La meticulosidad y apertura con la que abordemops estos asuntos tiene un impacto definitivo sobre la posibilidad de que otras personas puedan llegar a similares conclusiones que las nuestras, lo que abona a la noción de <em>objetividad científica</em>, y es una de las razones que nos lleva a confiar en la ciencia al tomar decisiones.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -641,7 +659,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link" aria-label="Introducción">
+      <a href="./primeros-pasos.html" class="pagination-link" aria-label="Introducción">
         <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>

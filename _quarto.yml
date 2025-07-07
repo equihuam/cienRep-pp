@@ -8,6 +8,8 @@ bibliography: referencias.bib
 csl: apa.csl
 css: estilo.css
 
+lightbox: true
+
 citation: 
   type: book
   
@@ -24,7 +26,8 @@ book:
   favicon: img/box-2071537_640.png
   chapters:
     - index.qmd
-    - intro.qmd
+    - primeros-pasos.qmd
+    - git-basico.qmd
     - resumen.qmd
     - referencias.qmd
     

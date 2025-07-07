@@ -1,0 +1,108 @@
+## Introducción
+
+En términos generales el contenido de una MIA de orden federal debe apegarse a lo especificado en el Reglamento de la LEGEPA en materia de Evaluación del Impacto Ambiental [@semarnat2014]. Ahí se especifica que estos instrumentos pueden ser sólo de dos tipos: regionales o particulares. La que haremos como ensayo seguirá en términos generales el marco de un estudio *MIA* particular. Si se requiriera un poco más de especificidad recurriremos a la guía de una MIA Particular - Sector Turístico [@semarnat]. Con base en este marco normativo los capítulos que habrá que desarrollar a lo largo de los ejercicios propuestos son los siguientes.
+
+::: {.lista-romana}
+1.  Datos generales del proyecto, del promovente y del responsable del estudio de impacto ambiental.
+2.  Descripción del proyecto;.
+3.  Vinculación con los ordenamientos jurídicos aplicables en materia ambiental y, en su caso, con la regulación sobre uso del suelo.
+4.  Descripción del sistema ambiental y señalamiento de la problemática ambiental detectada en el área de influencia del proyecto.
+5.  Identificación, descripción y evaluación de los impactos ambientales.
+6.  Medidas preventivas y de mitigación de los impactos ambientales.
+7.  Pronósticos ambientales y, en su caso, evaluación de alternativas.
+8.  Identificación de los instrumentos metodológicos y elementos técnicos que sustentan la información señalada en las fracciones anteriores.
+:::
+
+### RStudio
+
+Es un *entorno integrado de desarrollo* (**IDE**). El proceso de trabajo que utilizaremos se basa en el programa *RStudio*. Se trata de un *Entorno de Desarrollo Integrado* (**IDE**) que pemite la interacción entre el *lenguaje R*, *pandoc*, *git* y *Github* de una manera sencilla y eficiente. Además, ofrece una estructura que permite interactuar con distintos aspecto del proceso creativo. En la figura puedes ver lo que usualmente tienes a tu alcance en una instalación común. Esta configuración la puedes modificar según tus preferencias desde el menú *View* ⟹ *panes*. Pero probablemente al inicio te bastará con la configuración que ya tienes.
+
+![](img/Rstudio.png)
+
+La gente de **Posit**, desarrolladores de *RStudio* está trabajando en la producción de versiones del programa en otros idiomas, aparte del inglés. En este momento existe una prueba en francés, pero no está listo nada en español. Mientras tanto, una ayuda parcial puede ser tener acceso a los reportes de error que dan los comandos en español, para eso deberás usar el comando siguiente en la ventana de *consola*
+
+
+```{r}
+#| eval: false
+
+# Idioma español en sistema de codificación digital UTF-8
+Sys.setLanguage(lang = "es.UTF-8")
+
+```
+
+
+Esto puede ayudar, pero puede ser también un problema si necesitas buscar ayuda en Internet, que las más de las veces está en inglés. Entonces, si quieres regresar al mundo anglosajón harás algo semejante a lo de arriba, pero usarás el código apropiado, por ejemplo para inglés norteamericano: "en_us.UTF-8"
+
+
+```{r}
+#| eval: false
+
+# Idioma inglés norteamericano en sistema de codificación digital UTF-8
+Sys.setLanguage(lang = "en_us.UTF-8")
+
+```
+
+
+
+## Flujo de trabajo
+
+El proceso de trabajo que seguiremos en este libro inicia con la creación de un proyecto *Quarto book* en *Rstudio*, lo que genera un conjunto de archivos y carpetas dentro de la carpeta raíz del proyecto. Los principales componentes de esta etapa inicial son el archivo `_quarto.yml`, y la carpeta `_book`.
+
+
+El primero es un *documento de control y metadatos*. Define los atributos generales del libro y datos como autores, fechas, idioma, etc. La carpeta contendrá el libro producido en los formato de publicación que especifiques. Los nombres de estos dos elementos no los debes modificar nunca. *RStudio* crea además algunos archivos de ejemplo para ilustrar lo que puede ser el contenido del libro: `intro.qmd`, `summary.qmd` y una coleción de datos de referencias documentales: `references.bib`, los que también se anotan en el archivo de control. Los nombres de estos archivos pueden ser los que tu prefieras, pero te sugiero mantenerlos cortos y no incluir caracteres latinos. Piensa que deben ser fáciles de procesar por una computadora, no tanto inteligibles por seres humanos.
+  
+
+### Archivo de configuración `_quarto.yml` .
+  
+  Este archivo contiene la configuración inicial de tu libro. En un principio puede tener un contenido como el siguiente: 
+
+
+```yaml
+
+project: 
+type: book
+
+book: 
+  title: "mybook" 
+  author: "Juanita Staku" 
+  date: "8/18/2021"
+  chapters: 
+    - index.qmd 
+    - intro.qmd 
+    - summary.qmd 
+    - references.qmd
+
+bibliography: references.bib
+
+format: html: 
+  tema: cosmo
+
+pdf: 
+  documentclass: scrreprt
+
+epub: 
+  cover-image: cover.png 
+
+```
+
+
+### Previsualizar el libro
+
+En cualquier momento puedes producir una *vista previa* de tu documento.
+Lo único que hay que hacer es activar el **botón render** en *RStudio*.
+Como la ista previa la realiza *quarto* con ayuda de *pandoc*, podemos también hacerlo directamente desde una ventana de terminal (la integrada en *RStudio* o la que puedas abrir por separado en tu equipo). Ahí sólo tendrás que asegurarte de estar ubicada en la carpeta de tu proyecto y proporcionar el siguiente comando: `quarto preview`. ¡Eso es todo!, por lo pronto.
+
+
+## Markdown
+
+::: {layout="[1.5, -0.1, 1]"}
+Markdown fue desarrollado en 2004 por **John Gruber** ([Fig. @fig-gruber]). Ideo una manera de poner marcas de formato en un texto común y corriente (lo llamaremos *texto plano*). También construyó un programa de cómputo (lo escribió en el lenguaje **Perl**), para convertir los archivos ya marcados en *Markdown* a algo conveniente para que las computadoras nos los pudieran presentar a través de la **Web**. Hacer esto implica reconstruir y transformar el documento original a un nuevo formato, el **HTML** (*HyperText Markup Language*). Encontrarás ayuda sobre como usar *Markdown* en el menú de ayuda de **RStudio**: *Help* $\rightarrow$ *Markdown Quick Reference*.
+
+![John Gruber](img/John-Gruber-2009-By-Randy-Stewart-CC-BY-SA-3-0-wikimedia.jpg){#fig-gruber width="200px"}
+:::
+
+He aquí uno de los grande valores que busca el movimiento en favor de una *ciencia abierta*: **romper las barreras que limitan el acceso a los textos y a los datos**. El uso de *texto plano* para escribir y organizar archivos de datos tienen muchas ventajas. Para empezar se pueden leer prácticamente en cualquier dispositivo, independientemente de *sistema operativo* e intereses comerciales de los fabricantes. Los archivos escritos así han superado la *dura prueba del paso del tiempo* mejor que otros tipos de archivos.
+
+El día de hoy empezaremos a utilizar la idea del *Markdown*. Producirás tus primeros archivos que serán legibles como texto plano y que a la vez estarán listos para ser producidos en una variedad de presentaciones que usualmente requerimos para nuestro propio registro de actividades y para interactuar con colegas o maestros. Además, de lo que hizo en su momento *Gruber*, ahora existen herramientas como **Pandoc**, que pueden convertir archivos desde *Markdown* a una variedad de otros formatos que seguramente serán de tu interés en algún momento. Otro de los valores de la *ciencia abierta*: **favorecer el reuso de los productos de información y conocimiento**
+
+

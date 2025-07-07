@@ -1,0 +1,146 @@
+# Git: lo básico
+
+## Guardar el trabajo con la intención de colaborar
+
+Ahora ya tenemos el texto en nuestras máquinas, almacenado en casa. ¿Podemos hacer algo más para asegurar esos materiales y facilitar compartirlos con quienes queramos? Te sugiero considerar **git** y **github** para eso. Podemos imaginar que el espacio de almacenamiento en tu máquina es como una parcela de siembra, cada dato tiene coordenadas de localización y así los recuperas cuando los quieres. Lo que hace *git* es agregar una *ventana de tiempo* que te permite asomarte a la historia de lo que pasó en esas ubicaciones que te interesan.
+
+![Fuente: *Final.doc* en **Piled Higher and Deeper** por Jorge Cham, http://www.phdcomics.com](img/version_control_motivation_comics.png){width="40%"}
+
+### ¿Qué es Git?
+
+::: {layout="[3,1]"}
+Es una aplicación diseñada por el iniciador del desarrollo de Linux, **Linus Torvalds** ([Fig. @fig-torvalds]). [Git](https://git-scm.com/) es un sistema eficiente confiable y distribuido de control de versiones. El control de versiones es simplemente el seguimiento y registro de los cambios que va teniendo un documento a lo largo del tiempo. El concepto *distribuido* se refiere a que el registro local que tengas en tu máquina o para el caso en cualquier número de máquinas, es un registro completo, **clonado** del proyecto. Estos repositorios locales plenamente funcionales permiten trabajar aún cuando no tengas acceso a Internet. Los autores realizan y registran su trabajo localmente y, cuando lo encuentren conveniente, sincronizan la copia local del repositorio con la del servidor. En la actualidad *Git* se ha convertido en el estándar mundial *de facto* para el control de versiones.
+
+
+![Linus Torvalds](img/Lf-Asia-wikimedia-by-the-Archive-Team-CC-BY-3.png){#fig-torvalds width="80%"}
+:::
+
+::: {.callout-note collapse="true" title="Activar git"}
+Para activar **git** en tu proyecto tienes dos opciones:
+
+1.  Hacerlo desde el principio marcando la casilla respectiva al momento de crear el proyecto.
+2.  Utilizar la biblioteca de herramientas auxiliares [`usethis`](https://usethis.r-lib.org/articles/git-credentials.html).
+
+Con este comando creas lo necesario para usar **git** en tu proyecto.
+
+```{r}
+#| label: usethis-git
+#| eval: false
+
+
+usethis::use_git()
+
+```
+
+En cualquier caso, ahora conviene verificar como está configurado el espacio de trabajo. En la ventana de **consola** puedes escribir los siguientes comandos para averiguar detalles de tu configuración.
+
+Esto te dirá como se llama la *ventana de tiempo* que has elegido definir como base de trabajo, puedes tener tantas ramas distintas como consideres, pero conviene que una sea la principal. Se solía llamar a esta rama **master**, pero ahora se ha considerado que la !esclavitud ya ha sido abolida!, así que hay una tendencia a mejor llamarle **main**. En realidad puedes llamarla como quieras.
+
+```{r}
+#| label: obtiene-rama-base
+#| eval: false
+
+usethis::git_default_branch()
+
+```
+
+Si quieres configurar tu instalación de **RStudio** para que siempre defina la rama base como *main*, puedes usar el siguiente comando. Aunque esto sólo actuará para futuros proyectos, no cambiará nada en los que tienes ya creados hasta este momento.
+
+```{r}
+#| label: configura-rama-base
+#| eval: false
+
+usethis::git_default_branch_configure(name = "main")
+
+```
+
+Si lo que quieres es modificar la rama principal del proyecto con el que estas trabajando y que ya tienes abierto, este es el comando que te ayudará. En este ejemplo uso lo que es ya práctica común, migrar de *master* a *main*, pero puedes tomar tus propias preferencias sin ningún problema, aunque obviamente la parte **from** debe ser la existente que deseas modificar.
+
+```{r}
+#| label: cambia-rama-base
+#| eval: false
+
+usethis::git_default_branch_rename(from = "master", to = "main")
+
+```
+
+No todos los archivos que están en el espacio de trabajo son realmente de interés como para seguir su historia en el tiempo y podría haber también cosas que nunca deberían estar registradas en un sistema que te expone al acceso público generalizado: claves personales, tokens, identificadores de archivos privados, etc. Aunque ante esto no hay mejor cosa que ser prudente y estar atentos, existe la función `vacunar` que busca ayudarte a evitar estos problemas. Para activar esta ayuda en tu proyecto puedes usar este comando.
+
+```{r}
+#| label: vacuna
+#| eval: false
+
+usethis::git_vaccinate()
+```
+
+Esto pone ya en operación las capacidades de **git** en tu máquina. Para usarlas debes dirigirte a la pestaña respectiva. Con la función **Commit** generas el registro del estado de los archivos del proyecto al momento de activar el comando. Para operar esto debes decidir que archivos enviar al registro histórico, marcados como *staged*. Al apretar el botón **Commit** aparecerá una ventana en donde se reportan los detalles de lo que estas registrando. Cada **Commit** requiere anotar un mensaje descriptivo breve de lo que contiene el "corte". Una vez que está todo resuelto, hay que apretar el botón **Commit** en esa pantalla y esperar algunos segundos a que termine el proceso de registro en la base de datos respectiva.
+:::
+
+::: {.callout-warning collapse="true"}
+## Enviar el *repositorio* **git** a la nube
+
+Ahora estas preparada o preparado para enviar tu trabajo a *la nube*, lo haremos con el servicio de **Github**, aunque hay varias opciones (como **gitlab** por ejemplo).
+
+Nuevamente nos ayudará `usethis`para hacer esto. Lo primero es que para comunicar **RStudio** con **Github** necesitas registrar un **token** de ese servicio en tu equipo. El comando para esto es:
+
+```{r}
+#| label: github-token
+#| eval: false
+
+usethis::create_github_token()
+```
+
+Esto te lleva a la página de **Github** en la que hay que generar el **token**. Hay que responder las preguntas que te haga la página, aunque todo estará *prellenado* con lo normalmente necesario. Cuando esté a tu gusto, aprieta el botón respectivo. Aparecerá una nueva pantalla con el **token**. Este **token** que aparece, es la única vez que lo verás, por lo que conviene copiarlo al *portapapeles* de tu máquina (**ctrl-c** en windows) y tenerlo a buen resguardo por lo pronto. En seguida hay que ejecutar este otro comando en la consola de *RStudio*
+
+```{r}
+#| label: remote-creds
+#| eval: false
+
+gitcreds::gitcreds_set()
+```
+
+Si es la primera vez que registras un **token** te pedirá que lo registres, dale *paste* (**ctrl-v** en Windows). Si ya tienes un registro dado de alta, te informará sobre lo que tiene anotado y te dará oportunidad de decidir qué quieres hacer en seguida.
+
+Todo está ya preparado, sólo falta poner en uso el vínculo que acabamos de crear. Para eso bastará con decir:
+
+```{r}
+#| label: usar-github
+#| eval: false
+
+usethis::use_github()
+
+```
+
+Por cierto, este es el comando que necesitarán en lo sucesivo para vincular cualquier nuevo proyecto a tu cuenta de **Github**, siempre y cuando tu **token** este vigente.
+:::
+
+::: {layout="[2,1]"}
+Una vez terminadas estas tarea puedes ir a la pestaña **git** cuando lo consideres conveniente y ordenar a **RStudio** que envié todos los **commits** que están pendientes hasta el momento a **Github**. Para hacerlo deberás apretar el botón **push**. Antes de hacerlo siempre es conveniente pedirle a **git** que se ponga al día con lo que ya está registrado en la *nube*, esto lo logras con el botón **pull**. Esto nos lleva a una rutina de operación con **git** que se resume en la figura siguiente.
+
+![](img/en-caso-de-incendio.png){width="150px"}
+:::
+
+::: {.callout-tip collapse="true"}
+
+## Resumen rutinario para usar **git**
+
+Claro está que configurar todo la primera vez es un poco complicado, pero si todo está listo: git instalado, cuenta de Github, token activado, etc. la operación cotidiana es mucho más sencilla.
+
+En la figura se ilustran las dos rutas para hacerlo en *RStudio*.
+
+![](img/proyecto-con-git.png)
+
+Evidentemente, si seguiste la ruta azul, tu repositorio ya existe en *Github*, una vez que hayas **clonado** el repositorio en tu máquina todo queda listo para concentrarte en escribir. Si optaste por la ruta verde, entonces deberás crear un nuevo repositorio en *Github*. Para hacerlo Utiliza `usethis` en la pestaña de consola.
+
+```{r}
+#| eval: false
+
+usethis::use_github()
+
+```
+
+Eso es todo.
+
+| 
+| 
+:::

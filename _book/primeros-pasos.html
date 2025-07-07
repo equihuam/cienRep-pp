@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Referencias – Ciencia reproducible para la política pública</title>
+<title>1&nbsp; Introducción – Ciencia reproducible para la política pública</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,10 +20,45 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -49,7 +84,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./resumen.html" rel="prev">
+<link href="./git-basico.html" rel="next">
+<link href="./index.html" rel="prev">
 <link href="./img/box-2071537_640.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -60,6 +96,9 @@ div.csl-indent {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-2f74ddd1cf97687361fa130982d032ab.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -88,6 +127,35 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="estilo.css">
 </head>
@@ -101,7 +169,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./referencias.html">Referencias</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./primeros-pasos.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -137,7 +205,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./primeros-pasos.html" class="sidebar-item-text sidebar-link">
+  <a href="./primeros-pasos.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción</span></span></a>
   </div>
 </li>
@@ -155,7 +223,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./referencias.html" class="sidebar-item-text sidebar-link active">
+  <a href="./referencias.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Referencias</span></a>
   </div>
 </li>
@@ -164,15 +232,27 @@ div.csl-indent {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#rstudio" id="toc-rstudio" class="nav-link active" data-scroll-target="#rstudio"><span class="header-section-number">1.0.1</span> RStudio</a></li>
+  <li><a href="#flujo-de-trabajo" id="toc-flujo-de-trabajo" class="nav-link" data-scroll-target="#flujo-de-trabajo"><span class="header-section-number">1.1</span> Flujo de trabajo</a>
+  <ul class="collapse">
+  <li><a href="#archivo-de-configuración-_quarto.yml-." id="toc-archivo-de-configuración-_quarto.yml-." class="nav-link" data-scroll-target="#archivo-de-configuración-_quarto.yml-."><span class="header-section-number">1.1.1</span> Archivo de configuración <code>_quarto.yml</code> .</a></li>
+  <li><a href="#previsualizar-el-libro" id="toc-previsualizar-el-libro" class="nav-link" data-scroll-target="#previsualizar-el-libro"><span class="header-section-number">1.1.2</span> Previsualizar el libro</a></li>
+  </ul></li>
+  <li><a href="#markdown" id="toc-markdown" class="nav-link" data-scroll-target="#markdown"><span class="header-section-number">1.2</span> Markdown</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Referencias</h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción</span></h1>
 </div>
 
 
@@ -189,18 +269,111 @@ div.csl-indent {
 </header>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<p>En términos generales el contenido de una MIA de orden federal debe apegarse a lo especificado en el Reglamento de la LEGEPA en materia de Evaluación del Impacto Ambiental <span class="citation" data-cites="semarnat2014">(<a href="referencias.html#ref-semarnat2014" role="doc-biblioref">SEMARNAT, 2014</a>)</span>. Ahí se especifica que estos instrumentos pueden ser sólo de dos tipos: regionales o particulares. La que haremos como ensayo seguirá en términos generales el marco de un estudio <em>MIA</em> particular. Si se requiriera un poco más de especificidad recurriremos a la guía de una MIA Particular - Sector Turístico <span class="citation" data-cites="semarnat">(<a href="referencias.html#ref-semarnat" role="doc-biblioref">SEMARNAT, 2022</a>)</span>. Con base en este marco normativo los capítulos que habrá que desarrollar a lo largo de los ejercicios propuestos son los siguientes.</p>
+<div class="lista-romana">
+<ol type="1">
+<li>Datos generales del proyecto, del promovente y del responsable del estudio de impacto ambiental.</li>
+<li>Descripción del proyecto;.</li>
+<li>Vinculación con los ordenamientos jurídicos aplicables en materia ambiental y, en su caso, con la regulación sobre uso del suelo.</li>
+<li>Descripción del sistema ambiental y señalamiento de la problemática ambiental detectada en el área de influencia del proyecto.</li>
+<li>Identificación, descripción y evaluación de los impactos ambientales.</li>
+<li>Medidas preventivas y de mitigación de los impactos ambientales.</li>
+<li>Pronósticos ambientales y, en su caso, evaluación de alternativas.</li>
+<li>Identificación de los instrumentos metodológicos y elementos técnicos que sustentan la información señalada en las fracciones anteriores.</li>
+</ol>
+</div>
+<section id="rstudio" class="level3" data-number="1.0.1">
+<h3 data-number="1.0.1" class="anchored" data-anchor-id="rstudio"><span class="header-section-number">1.0.1</span> RStudio</h3>
+<p>Es un <em>entorno integrado de desarrollo</em> (<strong>IDE</strong>). El proceso de trabajo que utilizaremos se basa en el programa <em>RStudio</em>. Se trata de un <em>Entorno de Desarrollo Integrado</em> (<strong>IDE</strong>) que pemite la interacción entre el <em>lenguaje R</em>, <em>pandoc</em>, <em>git</em> y <em>Github</em> de una manera sencilla y eficiente. Además, ofrece una estructura que permite interactuar con distintos aspecto del proceso creativo. En la figura puedes ver lo que usualmente tienes a tu alcance en una instalación común. Esta configuración la puedes modificar según tus preferencias desde el menú <em>View</em> ⟹ <em>panes</em>. Pero probablemente al inicio te bastará con la configuración que ya tienes.</p>
+<p><a href="img/Rstudio.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="img/Rstudio.png" class="img-fluid"></a></p>
+<p>La gente de <strong>Posit</strong>, desarrolladores de <em>RStudio</em> está trabajando en la producción de versiones del programa en otros idiomas, aparte del inglés. En este momento existe una prueba en francés, pero no está listo nada en español. Mientras tanto, una ayuda parcial puede ser tener acceso a los reportes de error que dan los comandos en español, para eso deberás usar el comando siguiente en la ventana de <em>consola</em></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Idioma español en sistema de codificación digital UTF-8</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.setLanguage</span>(<span class="at">lang =</span> <span class="st">"es.UTF-8"</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Esto puede ayudar, pero puede ser también un problema si necesitas buscar ayuda en Internet, que las más de las veces está en inglés. Entonces, si quieres regresar al mundo anglosajón harás algo semejante a lo de arriba, pero usarás el código apropiado, por ejemplo para inglés norteamericano: “en_us.UTF-8”</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Idioma inglés norteamericano en sistema de codificación digital UTF-8</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.setLanguage</span>(<span class="at">lang =</span> <span class="st">"en_us.UTF-8"</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="flujo-de-trabajo" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="flujo-de-trabajo"><span class="header-section-number">1.1</span> Flujo de trabajo</h2>
+<p>El proceso de trabajo que seguiremos en este libro inicia con la creación de un proyecto <em>Quarto book</em> en <em>Rstudio</em>, lo que genera un conjunto de archivos y carpetas dentro de la carpeta raíz del proyecto. Los principales componentes de esta etapa inicial son el archivo <code>_quarto.yml</code>, y la carpeta <code>_book</code>.</p>
+<p>El primero es un <em>documento de control y metadatos</em>. Define los atributos generales del libro y datos como autores, fechas, idioma, etc. La carpeta contendrá el libro producido en los formato de publicación que especifiques. Los nombres de estos dos elementos no los debes modificar nunca. <em>RStudio</em> crea además algunos archivos de ejemplo para ilustrar lo que puede ser el contenido del libro: <code>intro.qmd</code>, <code>summary.qmd</code> y una coleción de datos de referencias documentales: <code>references.bib</code>, los que también se anotan en el archivo de control. Los nombres de estos archivos pueden ser los que tu prefieras, pero te sugiero mantenerlos cortos y no incluir caracteres latinos. Piensa que deben ser fáciles de procesar por una computadora, no tanto inteligibles por seres humanos.</p>
+<section id="archivo-de-configuración-_quarto.yml-." class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="archivo-de-configuración-_quarto.yml-."><span class="header-section-number">1.1.1</span> Archivo de configuración <code>_quarto.yml</code> .</h3>
+<p>Este archivo contiene la configuración inicial de tu libro. En un principio puede tener un contenido como el siguiente:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">type</span><span class="kw">:</span><span class="at"> book</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">book</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"mybook"</span><span class="at"> </span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Juanita Staku"</span><span class="at"> </span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"8/18/2021"</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">chapters</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> index.qmd </span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> intro.qmd </span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> summary.qmd </span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> references.qmd</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html: </span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">tema</span><span class="kw">:</span><span class="at"> cosmo</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="fu">pdf</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">documentclass</span><span class="kw">:</span><span class="at"> scrreprt</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="fu">epub</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">cover-image</span><span class="kw">:</span><span class="at"> cover.png </span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="previsualizar-el-libro" class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="previsualizar-el-libro"><span class="header-section-number">1.1.2</span> Previsualizar el libro</h3>
+<p>En cualquier momento puedes producir una <em>vista previa</em> de tu documento. Lo único que hay que hacer es activar el <strong>botón render</strong> en <em>RStudio</em>. Como la ista previa la realiza <em>quarto</em> con ayuda de <em>pandoc</em>, podemos también hacerlo directamente desde una ventana de terminal (la integrada en <em>RStudio</em> o la que puedas abrir por separado en tu equipo). Ahí sólo tendrás que asegurarte de estar ubicada en la carpeta de tu proyecto y proporcionar el siguiente comando: <code>quarto preview</code>. ¡Eso es todo!, por lo pronto.</p>
+</section>
+</section>
+<section id="markdown" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="markdown"><span class="header-section-number">1.2</span> Markdown</h2>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout="[1.5, -0.1, 1]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 57.7%;justify-content: flex-start;">
+<p>Markdown fue desarrollado en 2004 por <strong>John Gruber</strong> (<a href="#fig-gruber" class="quarto-xref">Fig.&nbsp;<span>1.1</span></a>). Ideo una manera de poner marcas de formato en un texto común y corriente (lo llamaremos <em>texto plano</em>). También construyó un programa de cómputo (lo escribió en el lenguaje <strong>Perl</strong>), para convertir los archivos ya marcados en <em>Markdown</em> a algo conveniente para que las computadoras nos los pudieran presentar a través de la <strong>Web</strong>. Hacer esto implica reconstruir y transformar el documento original a un nuevo formato, el <strong>HTML</strong> (<em>HyperText Markup Language</em>). Encontrarás ayuda sobre como usar <em>Markdown</em> en el menú de ayuda de <strong>RStudio</strong>: <em>Help</em> <span class="math inline">\(\rightarrow\)</span> <em>Markdown Quick Reference</em>.</p>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 3.9%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 38.5%;justify-content: flex-start;">
+<div id="fig-gruber" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gruber-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="img/John-Gruber-2009-By-Randy-Stewart-CC-BY-SA-3-0-wikimedia.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figura&nbsp;1.1: John Gruber"><img src="img/John-Gruber-2009-By-Randy-Stewart-CC-BY-SA-3-0-wikimedia.jpg" class="img-fluid figure-img" width="200"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gruber-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1.1: John Gruber
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>He aquí uno de los grande valores que busca el movimiento en favor de una <em>ciencia abierta</em>: <strong>romper las barreras que limitan el acceso a los textos y a los datos</strong>. El uso de <em>texto plano</em> para escribir y organizar archivos de datos tienen muchas ventajas. Para empezar se pueden leer prácticamente en cualquier dispositivo, independientemente de <em>sistema operativo</em> e intereses comerciales de los fabricantes. Los archivos escritos así han superado la <em>dura prueba del paso del tiempo</em> mejor que otros tipos de archivos.</p>
+<p>El día de hoy empezaremos a utilizar la idea del <em>Markdown</em>. Producirás tus primeros archivos que serán legibles como texto plano y que a la vez estarán listos para ser producidos en una variedad de presentaciones que usualmente requerimos para nuestro propio registro de actividades y para interactuar con colegas o maestros. Además, de lo que hizo en su momento <em>Gruber</em>, ahora existen herramientas como <strong>Pandoc</strong>, que pueden convertir archivos desde <em>Markdown</em> a una variedad de otros formatos que seguramente serán de tu interés en algún momento. Otro de los valores de la <em>ciencia abierta</em>: <strong>favorecer el reuso de los productos de información y conocimiento</strong></p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
 <div id="ref-semarnat2014" class="csl-entry" role="listitem">
-SEMARNAT. (2014). <em>Reglamento de la Ley General del Equilibrio
-Ecológico y la Protección al Ambiente en materia de Evaluación del
-Impacto Ambiental</em>. <a href="https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LGEEPA_MEIA_311014.pdf">https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LGEEPA_MEIA_311014.pdf</a>
+SEMARNAT. (2014). <em>Reglamento de la Ley General del Equilibrio Ecológico y la Protección al Ambiente en materia de Evaluación del Impacto Ambiental</em>. <a href="https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LGEEPA_MEIA_311014.pdf">https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LGEEPA_MEIA_311014.pdf</a>
 </div>
 <div id="ref-semarnat" class="csl-entry" role="listitem">
 SEMARNAT. (2022). <em>Guia MIA Particular - Sector Turistico</em>. <a href="https://www.gob.mx/cms/uploads/attachment/file/121010/Guia_MIA-Particular_Turistico.pdf">https://www.gob.mx/cms/uploads/attachment/file/121010/Guia_MIA-Particular_Turistico.pdf</a>
 </div>
 </div>
-
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -622,14 +795,49 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./resumen.html" class="pagination-link" aria-label="Resumen">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Resumen</span></span>
+      <a href="./index.html" class="pagination-link" aria-label="Prefacio">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Prefacio</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./git-basico.html" class="pagination-link" aria-label="Git: lo básico">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Git: lo básico</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>1&nbsp; Introducción – Ciencia reproducible para la política pública</title>
+<title>2&nbsp; Git: lo básico – Ciencia reproducible para la política pública</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -54,27 +54,7 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -85,7 +65,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./resumen.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./primeros-pasos.html" rel="prev">
 <link href="./img/box-2071537_640.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -137,7 +117,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./git-basico.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Git: lo básico</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -173,14 +153,20 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link active">
+  <a href="./primeros-pasos.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./git-basico.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Git: lo básico</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./resumen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Resumen</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Resumen</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -199,10 +185,9 @@ div.csl-indent {
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#flujo-de-trabajo" id="toc-flujo-de-trabajo" class="nav-link active" data-scroll-target="#flujo-de-trabajo"><span class="header-section-number">1.1</span> Flujo de trabajo</a>
+  <li><a href="#guardar-el-trabajo-con-la-intención-de-colaborar" id="toc-guardar-el-trabajo-con-la-intención-de-colaborar" class="nav-link active" data-scroll-target="#guardar-el-trabajo-con-la-intención-de-colaborar"><span class="header-section-number">2.1</span> Guardar el trabajo con la intención de colaborar</a>
   <ul class="collapse">
-  <li><a href="#archivo-de-configuración-_quarto.yml-." id="toc-archivo-de-configuración-_quarto.yml-." class="nav-link" data-scroll-target="#archivo-de-configuración-_quarto.yml-."><span class="header-section-number">1.1.1</span> Archivo de configuración <code>_quarto.yml</code> .</a></li>
-  <li><a href="#previsualizar-el-libro" id="toc-previsualizar-el-libro" class="nav-link" data-scroll-target="#previsualizar-el-libro"><span class="header-section-number">1.1.2</span> Previsualizar el libro</a></li>
+  <li><a href="#qué-es-git" id="toc-qué-es-git" class="nav-link" data-scroll-target="#qué-es-git"><span class="header-section-number">2.1.1</span> ¿Qué es Git?</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -212,7 +197,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Git: lo básico</span></h1>
 </div>
 
 
@@ -229,64 +214,151 @@ div.csl-indent {
 </header>
 
 
-<p>En términos generales el contenido de una MIA de orden federal debe apegarse a lo especificado en el Reglamento de la LEGEPA en materia de Evaluación del Impacto Ambiental <span class="citation" data-cites="semarnat2014">(<a href="referencias.html#ref-semarnat2014" role="doc-biblioref">SEMARNAT, 2014</a>)</span>. Ahí se especifica que estos instrumentos pueden ser sólo de dos tipos: regionales o particulares. La que haremos como ensayo seguirá en términos generales el marco de un estudio <em>MIA</em> particular. Si se requiriera un poco más de especificidad recurriremos a la guía de una MIA Particular - Sector Turístico <span class="citation" data-cites="semarnat">(<a href="referencias.html#ref-semarnat" role="doc-biblioref">SEMARNAT, 2022</a>)</span>. Con base en este marco normativo los capítulos que habrá que desarrollar a lo largo de los ejercicios propuestos son los siguientes.</p>
-<div class="lista-romana">
+<section id="guardar-el-trabajo-con-la-intención-de-colaborar" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="guardar-el-trabajo-con-la-intención-de-colaborar"><span class="header-section-number">2.1</span> Guardar el trabajo con la intención de colaborar</h2>
+<p>Ahora ya tenemos el texto en nuestras máquinas, almacenado en casa. ¿Podemos hacer algo más para asegurar esos materiales y facilitar compartirlos con quienes queramos? Te sugiero considerar <strong>git</strong> y <strong>github</strong> para eso. Podemos imaginar que el espacio de almacenamiento en tu máquina es como una parcela de siembra, cada dato tiene coordenadas de localización y así los recuperas cuando los quieres. Lo que hace <em>git</em> es agregar una <em>ventana de tiempo</em> que te permite asomarte a la historia de lo que pasó en esas ubicaciones que te interesan.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/version_control_motivation_comics.png" class="img-fluid figure-img" style="width:40.0%"></p>
+<figcaption>Fuente: <em>Final.doc</em> en <strong>Piled Higher and Deeper</strong> por Jorge Cham, http://www.phdcomics.com</figcaption>
+</figure>
+</div>
+<section id="qué-es-git" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="qué-es-git"><span class="header-section-number">2.1.1</span> ¿Qué es Git?</h3>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout="[3,1]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 75.0%;justify-content: flex-start;">
+<p>Es una aplicación diseñada por el iniciador del desarrollo de Linux, <strong>Linus Torvalds</strong> (<a href="#fig-torvalds" class="quarto-xref">Fig.&nbsp;<span>2.1</span></a>). <a href="https://git-scm.com/">Git</a> es un sistema eficiente confiable y distribuido de control de versiones. El control de versiones es simplemente el seguimiento y registro de los cambios que va teniendo un documento a lo largo del tiempo. El concepto <em>distribuido</em> se refiere a que el registro local que tengas en tu máquina o para el caso en cualquier número de máquinas, es un registro completo, <strong>clonado</strong> del proyecto. Estos repositorios locales plenamente funcionales permiten trabajar aún cuando no tengas acceso a Internet. Los autores realizan y registran su trabajo localmente y, cuando lo encuentren conveniente, sincronizan la copia local del repositorio con la del servidor. En la actualidad <em>Git</em> se ha convertido en el estándar mundial <em>de facto</em> para el control de versiones.</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
+<div id="fig-torvalds" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-torvalds-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/Lf-Asia-wikimedia-by-the-Archive-Team-CC-BY-3.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-torvalds-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2.1: Linus Torvalds
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Activar git">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Activar git
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Para activar <strong>git</strong> en tu proyecto tienes dos opciones:</p>
 <ol type="1">
-<li>Datos generales del proyecto, del promovente y del responsable del estudio de impacto ambiental.</li>
-<li>Descripción del proyecto;.</li>
-<li>Vinculación con los ordenamientos jurídicos aplicables en materia ambiental y, en su caso, con la regulación sobre uso del suelo.</li>
-<li>Descripción del sistema ambiental y señalamiento de la problemática ambiental detectada en el área de influencia del proyecto.</li>
-<li>Identificación, descripción y evaluación de los impactos ambientales.</li>
-<li>Medidas preventivas y de mitigación de los impactos ambientales.</li>
-<li>Pronósticos ambientales y, en su caso, evaluación de alternativas.</li>
-<li>Identificación de los instrumentos metodológicos y elementos técnicos que sustentan la información señalada en las fracciones anteriores.</li>
+<li>Hacerlo desde el principio marcando la casilla respectiva al momento de crear el proyecto.</li>
+<li>Utilizar la biblioteca de herramientas auxiliares <a href="https://usethis.r-lib.org/articles/git-credentials.html"><code>usethis</code></a>.</li>
 </ol>
+<p>Con este comando creas lo necesario para usar <strong>git</strong> en tu proyecto.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_git</span>()</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="flujo-de-trabajo" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="flujo-de-trabajo"><span class="header-section-number">1.1</span> Flujo de trabajo</h2>
-<p>El proceso de trabajo que utilizaremos se basa en el programa <em>RStudio</em>. Se trata de un <em>Entorno de Desarrollo Integrado</em> (<strong>IDE</strong>) que pemite la interacción entre el <em>lenguaje R</em>, <em>pandoc</em>, <em>git</em> y <em>Github</em> de una manera sencilla y eficiente. Inicia con la creación de un proyecto <em>Quarto book</em> en <em>Rstudio</em>, lo que genera un conjunto de archivos y carpetas dentro de la carpeta raíz del proyecto. Los principales componentes de esta etapa inicial son el archivo <code>_quarto.yml</code>, y la carpeta <code>_book</code>.</p>
-<p>El primero es un <em>documento de control y metadatos</em>. Define los atributos generales del libro y datos como autores, fechas, idioma, etc. La carpeta contendrá el libro producido en los formato de publicación que especifiques. Los nombres de estos dos elementos no los debes modificar nunca. <em>RStudio</em> crea además algunos archivos de ejemplo para ilustrar lo que puede ser el contenido del libro: <code>intro.qmd</code>, <code>summary.qmd</code> y una coleción de datos de referencias documentales: <code>references.bib</code>, los que también se anotan en el archivo de control. Los nombres de estos archivos pueden ser los que tu prefieras, pero te sugiero mantenerlos cortos y no incluir caracteres latinos. Piensa que deben ser fáciles de procesar por una computadora, no tanto inteligibles por seres humanos.</p>
-<section id="archivo-de-configuración-_quarto.yml-." class="level3" data-number="1.1.1">
-<h3 data-number="1.1.1" class="anchored" data-anchor-id="archivo-de-configuración-_quarto.yml-."><span class="header-section-number">1.1.1</span> Archivo de configuración <code>_quarto.yml</code> .</h3>
-<p>Este archivo contiene la configuración inicial de tu libro. En un principio puede tener un contenido como el siguiente:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">type</span><span class="kw">:</span><span class="at"> book</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">book</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"mybook"</span><span class="at"> </span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Juanita Staku"</span><span class="at"> </span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"8/18/2021"</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">chapters</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> index.qmd </span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> intro.qmd </span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> summary.qmd </span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> references.qmd</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html: </span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">tema</span><span class="kw">:</span><span class="at"> cosmo</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu">pdf</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">documentclass</span><span class="kw">:</span><span class="at"> scrreprt</span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">epub</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">cover-image</span><span class="kw">:</span><span class="at"> cover.png </span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="previsualizar-el-libro" class="level3" data-number="1.1.2">
-<h3 data-number="1.1.2" class="anchored" data-anchor-id="previsualizar-el-libro"><span class="header-section-number">1.1.2</span> Previsualizar el libro</h3>
-<p>En cualquier momento puedes producir una <em>vista previa</em> de tu documento. Lo único que hay que hacer es activar el <strong>botón render</strong> en <em>RStudio</em>. Como la ista previa la realiza <em>quarto</em> con ayuda de <em>pandoc</em>, podemos también hacerlo directamente desde una ventana de terminal (la integrada en <em>RStudio</em> o la que puedas abrir por separado en tu equipo). Ahí sólo tendrás que asegurarte de estar ubicada en la carpeta de tu proyecto y proporcionar el siguiente comando: <code>quarto preview</code>. ¡Eso es todo!</p>
+<p>En cualquier caso, ahora conviene verificar como está configurado el espacio de trabajo. En la ventana de <strong>consola</strong> puedes escribir los siguientes comandos para averiguar detalles de tu configuración.</p>
+<p>Esto te dirá como se llama la <em>ventana de tiempo</em> que has elegido definir como base de trabajo, puedes tener tantas ramas distintas como consideres, pero conviene que una sea la principal. Se solía llamar a esta rama <strong>master</strong>, pero ahora se ha considerado que la !esclavitud ya ha sido abolida!, así que hay una tendencia a mejor llamarle <strong>main</strong>. En realidad puedes llamarla como quieras.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">git_default_branch</span>()</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Si quieres configurar tu instalación de <strong>RStudio</strong> para que siempre defina la rama base como <em>main</em>, puedes usar el siguiente comando. Aunque esto sólo actuará para futuros proyectos, no cambiará nada en los que tienes ya creados hasta este momento.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">git_default_branch_configure</span>(<span class="at">name =</span> <span class="st">"main"</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Si lo que quieres es modificar la rama principal del proyecto con el que estas trabajando y que ya tienes abierto, este es el comando que te ayudará. En este ejemplo uso lo que es ya práctica común, migrar de <em>master</em> a <em>main</em>, pero puedes tomar tus propias preferencias sin ningún problema, aunque obviamente la parte <strong>from</strong> debe ser la existente que deseas modificar.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">git_default_branch_rename</span>(<span class="at">from =</span> <span class="st">"master"</span>, <span class="at">to =</span> <span class="st">"main"</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>No todos los archivos que están en el espacio de trabajo son realmente de interés como para seguir su historia en el tiempo y podría haber también cosas que nunca deberían estar registradas en un sistema que te expone al acceso público generalizado: claves personales, tokens, identificadores de archivos privados, etc. Aunque ante esto no hay mejor cosa que ser prudente y estar atentos, existe la función <code>vacunar</code> que busca ayudarte a evitar estos problemas. Para activar esta ayuda en tu proyecto puedes usar este comando.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">git_vaccinate</span>()</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Esto pone ya en operación las capacidades de <strong>git</strong> en tu máquina. Para usarlas debes dirigirte a la pestaña respectiva. Con la función <strong>Commit</strong> generas el registro del estado de los archivos del proyecto al momento de activar el comando. Para operar esto debes decidir que archivos enviar al registro histórico, marcados como <em>staged</em>. Al apretar el botón <strong>Commit</strong> aparecerá una ventana en donde se reportan los detalles de lo que estas registrando. Cada <strong>Commit</strong> requiere anotar un mensaje descriptivo breve de lo que contiene el “corte”. Una vez que está todo resuelto, hay que apretar el botón <strong>Commit</strong> en esa pantalla y esperar algunos segundos a que termine el proceso de registro en la base de datos respectiva.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Enviar el <em>repositorio</em> <strong>git</strong> a la nube
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Ahora estas preparada o preparado para enviar tu trabajo a <em>la nube</em>, lo haremos con el servicio de <strong>Github</strong>, aunque hay varias opciones (como <strong>gitlab</strong> por ejemplo).</p>
+<p>Nuevamente nos ayudará <code>usethis</code>para hacer esto. Lo primero es que para comunicar <strong>RStudio</strong> con <strong>Github</strong> necesitas registrar un <strong>token</strong> de ese servicio en tu equipo. El comando para esto es:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">create_github_token</span>()</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Esto te lleva a la página de <strong>Github</strong> en la que hay que generar el <strong>token</strong>. Hay que responder las preguntas que te haga la página, aunque todo estará <em>prellenado</em> con lo normalmente necesario. Cuando esté a tu gusto, aprieta el botón respectivo. Aparecerá una nueva pantalla con el <strong>token</strong>. Este <strong>token</strong> que aparece, es la única vez que lo verás, por lo que conviene copiarlo al <em>portapapeles</em> de tu máquina (<strong>ctrl-c</strong> en windows) y tenerlo a buen resguardo por lo pronto. En seguida hay que ejecutar este otro comando en la consola de <em>RStudio</em></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>gitcreds<span class="sc">::</span><span class="fu">gitcreds_set</span>()</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Si es la primera vez que registras un <strong>token</strong> te pedirá que lo registres, dale <em>paste</em> (<strong>ctrl-v</strong> en Windows). Si ya tienes un registro dado de alta, te informará sobre lo que tiene anotado y te dará oportunidad de decidir qué quieres hacer en seguida.</p>
+<p>Todo está ya preparado, sólo falta poner en uso el vínculo que acabamos de crear. Para eso bastará con decir:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_github</span>()</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Por cierto, este es el comando que necesitarán en lo sucesivo para vincular cualquier nuevo proyecto a tu cuenta de <strong>Github</strong>, siempre y cuando tu <strong>token</strong> este vigente.</p>
+</div>
+</div>
+</div>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout="[2,1]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 66.7%;justify-content: flex-start;">
+<p>Una vez terminadas estas tarea puedes ir a la pestaña <strong>git</strong> cuando lo consideres conveniente y ordenar a <strong>RStudio</strong> que envié todos los <strong>commits</strong> que están pendientes hasta el momento a <strong>Github</strong>. Para hacerlo deberás apretar el botón <strong>push</strong>. Antes de hacerlo siempre es conveniente pedirle a <strong>git</strong> que se ponga al día con lo que ya está registrado en la <em>nube</em>, esto lo logras con el botón <strong>pull</strong>. Esto nos lleva a una rutina de operación con <strong>git</strong> que se resume en la figura siguiente.</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><img src="img/en-caso-de-incendio.png" class="img-fluid" width="150"></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Resumen rutinario para usar <strong>git</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Claro está que configurar todo la primera vez es un poco complicado, pero si todo está listo: git instalado, cuenta de Github, token activado, etc. la operación cotidiana es mucho más sencilla.</p>
+<p>En la figura se ilustran las dos rutas para hacerlo en <em>RStudio</em>.</p>
+<p><img src="img/proyecto-con-git.png" class="img-fluid"></p>
+<p>Evidentemente, si seguiste la ruta azul, tu repositorio ya existe en <em>Github</em>, una vez que hayas <strong>clonado</strong> el repositorio en tu máquina todo queda listo para concentrarte en escribir. Si optaste por la ruta verde, entonces deberás crear un nuevo repositorio en <em>Github</em>. Para hacerlo Utiliza <code>usethis</code> en la pestaña de consola.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_github</span>()</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Eso es todo.</p>
+<div class="line-block"><br>
+</div>
+</div>
+</div>
+</div>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
-<div id="ref-semarnat2014" class="csl-entry" role="listitem">
-SEMARNAT. (2014). <em>Reglamento de la Ley General del Equilibrio Ecológico y la Protección al Ambiente en materia de Evaluación del Impacto Ambiental</em>. <a href="https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LGEEPA_MEIA_311014.pdf">https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LGEEPA_MEIA_311014.pdf</a>
-</div>
-<div id="ref-semarnat" class="csl-entry" role="listitem">
-SEMARNAT. (2022). <em>Guia MIA Particular - Sector Turistico</em>. <a href="https://www.gob.mx/cms/uploads/attachment/file/121010/Guia_MIA-Particular_Turistico.pdf">https://www.gob.mx/cms/uploads/attachment/file/121010/Guia_MIA-Particular_Turistico.pdf</a>
-</div>
-</div>
 </section>
 </section>
 
@@ -710,13 +782,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Prefacio">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Prefacio</span>
+      <a href="./primeros-pasos.html" class="pagination-link" aria-label="Introducción">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./resumen.html" class="pagination-link" aria-label="Resumen">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Resumen</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Resumen</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
