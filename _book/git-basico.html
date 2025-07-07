@@ -198,6 +198,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#qué-es-git" id="toc-qué-es-git" class="nav-link" data-scroll-target="#qué-es-git"><span class="header-section-number">2.1.1</span> ¿Qué es Git?</a></li>
   </ul></li>
+  <li><a href="#la-forma-segura-de-trabajar-con-git" id="toc-la-forma-segura-de-trabajar-con-git" class="nav-link" data-scroll-target="#la-forma-segura-de-trabajar-con-git"><span class="header-section-number">2.2</span> La forma segura de trabajar con git</a></li>
   </ul>
 </nav>
     </div>
@@ -361,14 +362,44 @@ Resumen rutinario para usar <strong>git</strong>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_github</span>()</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Eso es todo.</p>
-<div class="line-block"><br>
 </div>
 </div>
 </div>
-</div>
-
-
 </section>
+</section>
+<section id="la-forma-segura-de-trabajar-con-git" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="la-forma-segura-de-trabajar-con-git"><span class="header-section-number">2.2</span> La forma segura de trabajar con git</h2>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout="[1,1]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Una manera de trabajar con más tranquilidad en tu contenido es recurriendo a la ayuda que ofrece <em>git</em>. Te sugiero evitar trabajar el desarrollo de tus ideas directamente sobre la rama <em>main</em> o la que sea tu rama <strong>principal/publicación/producción</strong>. La idea es que cuando estes planeado y ensayando con algo nuevo crees una rama separada. Si ya tienes una y está en la misma temática, selecciona la orrespondiente como la rama activa, antes de ponerte a trabajar.</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-rama" class="quarto-float quarto-figure quarto-figure-right anchored" data-fig-align="right">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rama-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="img/git-rama-nueva.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figura&nbsp;2.2: Crear y usar una nueva rama de trabajo"><img src="img/git-rama-nueva.png" class="img-fluid quarto-figure quarto-figure-right figure-img" width="200"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rama-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2.2: Crear y usar una nueva rama de trabajo
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>Siempre Asegurate de que la rama del nuevo desarrollo sea la activa. Como recordarás, la publicación de tu <strong>documento</strong> ocurre a través de <em>Netlify</em> <strong>exclusivamenre con lo que pongas en la rama <em>main</em>.</strong>. Así que todo lo que hagas en la nueva rama no pasará a publicación en tu <strong>blog</strong>, sólo lo podrás ver localmente cuando hagas <em>render</em>, será una especie de borrador. Cuando todo esté a tu gusto y ya lo quieras publicar tienes que combinar el contenido de la rama en la que has estado trabajando con la rama <em>main</em>. Para hacerlo hay que seguir estos pasos:</p>
+<ol type="1">
+<li>Cambia el espacio de trabajo en <em>git</em> a la rama <em>main</em>.</li>
+<li>En la pestaña de <strong>terminal</strong> de <em>RStudio</em>. Indicale a <em>git</em> que copie el contenido de <em>la_rama_alterna_con_mi_trabajo</em> para combinarla. Escribe para esto los siguientes comandos de <em>git</em> en la pestaña de <strong>terminal</strong>:</li>
+</ol>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge la_rama_alterna_con_mi_trabajo</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Como podrás imaginar, <a href="https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging">el proceso requiere verificar muchas cosas</a>, lo cual hace <em>git</em> por ti. Normalmente y si te portaste bien, la fusión de las ramas debe ocurrir sin tropiezos. Si hubiera dificultades, <em>git</em> te lo hará saber. Basicamente lo que hará es indicarte que hay cambios contradictorios. Es decir, hiciste cambios tú, al mismo archivo en las dos ramas, así que no se puede decidir cuál es el cambio que hay que conservar sin preguntarte a ti que es lo que prefieres. En tal caso, veras los archivos inconsistentes marcados con una etiqueta naranja y tendrás que revisarlos para que tú resuelvas directamente lo conducente. Puede ser que haya archivos que en realidad no cambiaste tú directamente, como serían los que se producen automáticamente en <strong>_book</strong> o en <strong>_site</strong>, dependiendo del tipo de proyecto que estes trabajando y que sólo arrastrán las consecuencias de tus cambios. De esos no te preocupes, se renovarán cuando hayas resuelto los conflictos importantes, que seguramente son los que tienes en tus capítulos <strong>qmd</strong>, o algún detallito que arreglaste en los archivos general en la raíz de tu proyecto.</p>
+
+
 </section>
 
 </main> <!-- /main -->
