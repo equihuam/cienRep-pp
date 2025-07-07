@@ -28,6 +28,7 @@ book:
     - index.qmd
     - primeros-pasos.qmd
     - git-basico.qmd
+    - netlify-preparar.qmd
     - resumen.qmd
     - referencias.qmd
     

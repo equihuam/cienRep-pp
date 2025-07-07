@@ -23,8 +23,32 @@ En el movimiento social que nos invita a reflexionar sobre la *ciencia abierta*,
 La meticulosidad y apertura con la que abordemops estos asuntos tiene un impacto definitivo sobre la posibilidad de que otras personas puedan llegar a similares conclusiones que las nuestras, lo que abona a la noción de *objetividad científica*, y es una de las razones que nos lleva a confiar en la ciencia al tomar decisiones.
 
 
+## Habilidades
 
+A lo largo del libro buscaremos ayudar al lector a que desarrolle  habilidades como las siguientes:
 
-
-
-
+1. Estructurar mis documentos considerando la perspectiva de narrativa de datos:
+1. Defender mi propia opinión en relación con la crisis de la reproducibilidad:
+1. Crear un proyecto en RStudio que tenga a Quarto habilitado:
+1. Utilizar un blog como una bitácora de control de mi proyecto académico, que puedo compartir:
+1. Habilitar y manejar comentarios mediante http://hypothes.is/:
+1. Distinguir, buscar y utilizar apropiadamente datos abiertos y de acceso abierto:
+1. Organizar mi trabajo para producir y reportar resultados reproducibles:
+1. Generar reportes que compartan los datos y los algoritmos que usé para producirlo, con un ánimo de ciencia abierta:
+1. Cuidar de utilizar y defender valores de ciencia abierta en mi trabajo profesional:
+1. Escribir mi texto con Markdown usando marcas de formato, ligas e ilustraciones:
+1. Distinguir y manejar apropiadamente la sección de encabezado YAML de un documento (controlando las opciones y metadatos) y el resto del texto desarrollado con Markdown:
+1. Editar apropiadamente los distintos tipos de archivos de mi proyecto (yaml, qmd, posts, etc):
+1. Habilitar git en RStudio
+1. Vincular mi proyecto con un "almacén" en la nube con Github:
+1. Publicar continuamente mis documentos en la Web con ayuda de Netlify
+1. Operar rutinariamente en RStudio con respaldo en Git: commit-pull-push:
+1. Incluir en mi texto "trozos" de código (lectura de datos, análisis, graficación):
+1. Usar referencias cruzadas en mi texto (figuras, cuadros, definiciones, etc.):
+1. Anotar en mi texto citas bibliográficas e incluir la lista de literatura automáticamente:
+1. Utilizar Markdown para producir textos en formato MS-Word o PDF como "artículo científico":
+1. Producir documentos para "presentación web" con Reveal.JS:
+1. Crear nuevas ramas para trabajar sin afectar la línea de producción de mi proyecto:
+1. Recuperar estados previos de mi espacio de trabajo desde git:
+1. Reunir una rama de git con la principal de producción:
+1. Operar un "pull request" como medio de colaboración con respaldo en Github:

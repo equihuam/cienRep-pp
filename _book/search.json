@@ -98,5 +98,15 @@
     "crumbs": [
       "Prefacio"
     ]
+  },
+  {
+    "objectID": "index.html#habilidades",
+    "href": "index.html#habilidades",
+    "title": "Ciencia reproducible para la política pública",
+    "section": "Habilidades",
+    "text": "Habilidades\nA lo largo del libro buscaremos ayudar al lector a que desarrolle habilidades como las siguientes:\n\nEstructurar mis documentos considerando la perspectiva de narrativa de datos:\nDefender mi propia opinión en relación con la crisis de la reproducibilidad:\nCrear un proyecto en RStudio que tenga a Quarto habilitado:\nUtilizar un blog como una bitácora de control de mi proyecto académico, que puedo compartir:\nHabilitar y manejar comentarios mediante http://hypothes.is/:\nDistinguir, buscar y utilizar apropiadamente datos abiertos y de acceso abierto:\nOrganizar mi trabajo para producir y reportar resultados reproducibles:\nGenerar reportes que compartan los datos y los algoritmos que usé para producirlo, con un ánimo de ciencia abierta:\nCuidar de utilizar y defender valores de ciencia abierta en mi trabajo profesional:\nEscribir mi texto con Markdown usando marcas de formato, ligas e ilustraciones:\nDistinguir y manejar apropiadamente la sección de encabezado YAML de un documento (controlando las opciones y metadatos) y el resto del texto desarrollado con Markdown:\nEditar apropiadamente los distintos tipos de archivos de mi proyecto (yaml, qmd, posts, etc):\nHabilitar git en RStudio\nVincular mi proyecto con un “almacén” en la nube con Github:\nPublicar continuamente mis documentos en la Web con ayuda de Netlify\nOperar rutinariamente en RStudio con respaldo en Git: commit-pull-push:\nIncluir en mi texto “trozos” de código (lectura de datos, análisis, graficación):\nUsar referencias cruzadas en mi texto (figuras, cuadros, definiciones, etc.):\nAnotar en mi texto citas bibliográficas e incluir la lista de literatura automáticamente:\nUtilizar Markdown para producir textos en formato MS-Word o PDF como “artículo científico”:\nProducir documentos para “presentación web” con Reveal.JS:\nCrear nuevas ramas para trabajar sin afectar la línea de producción de mi proyecto:\nRecuperar estados previos de mi espacio de trabajo desde git:\nReunir una rama de git con la principal de producción:\nOperar un “pull request” como medio de colaboración con respaldo en Github:",
+    "crumbs": [
+      "Prefacio"
+    ]
   }
 ]
