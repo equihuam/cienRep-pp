@@ -1,5 +1,4 @@
 ---
-title: "datos-geoespaciales"
-format: html
+title: "Datos geoespaciales"
 ---
 

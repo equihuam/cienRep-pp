@@ -1,5 +1,4 @@
 ---
-title: "analisis-estadistico"
-format: html
+title: "Análisis estadístico"
 ---
 

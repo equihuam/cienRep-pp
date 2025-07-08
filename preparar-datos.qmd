@@ -1,5 +1,4 @@
 ---
-title: "preparar-datos"
-format: html
+title: "Preparación de datos"
 ---
 

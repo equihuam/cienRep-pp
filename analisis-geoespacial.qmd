@@ -1,5 +1,4 @@
 ---
-title: "analisis-geoespacial"
-format: html
+title: "Analisis geoespacial"
 ---
 

@@ -1,5 +1,4 @@
 ---
-title: "mapas"
-format: html
+title: "Mapas"
 ---
 
