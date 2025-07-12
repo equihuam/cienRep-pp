@@ -1,0 +1,10 @@
+project: 
+  output-dir: _book/posgrado
+
+book:
+  subtitle: "— posgrado —"
+  chapters:
+    - index.qmd
+    - requerimientos-posgrado.qmd
+
+

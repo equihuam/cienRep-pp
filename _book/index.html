@@ -48,11 +48,11 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -79,10 +79,23 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="estilo.css">
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title"><strong>Aviso</strong> - </span></a><a href="posgrado/requerimientos-posgrado.html">requisitos posgrado</a>
+    
+  </div>
+        <div class="quarto-navbar-tools tools-end">
+    <a href="./Ciencia-reproducible-para-la-política-pública.pdf" title="Descargar PDF" class="quarto-navigation-tool px-1" aria-label="Descargar PDF"><i class="bi bi-file-pdf"></i></a>
+</div>
+          <div id="quarto-search" class="" title="Buscar"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -91,29 +104,13 @@ ul.task-list li input[type="checkbox"] {
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Prefacio</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">Ciencia reproducible para la política pública</a> 
-        <div class="sidebar-tools-main">
-    <a href="./Ciencia-reproducible-para-la-política-pública.pdf" title="Descargar PDF" class="quarto-navigation-tool px-1" aria-label="Descargar PDF"><i class="bi bi-file-pdf"></i></a>
-</div>
-    </div>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Buscar"></div>
-        </div>
-        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -283,31 +280,31 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="habilidades">Habilidades</h2>
 <p>A lo largo del libro buscaremos ayudar al lector a que desarrolle habilidades como las siguientes:</p>
 <ol type="1">
-<li>Estructurar mis documentos considerando la perspectiva de narrativa de datos:</li>
-<li>Defender mi propia opinión en relación con la crisis de la reproducibilidad:</li>
-<li>Crear un proyecto en RStudio que tenga a Quarto habilitado:</li>
-<li>Utilizar un blog como una bitácora de control de mi proyecto académico, que puedo compartir:</li>
-<li>Habilitar y manejar comentarios mediante http://hypothes.is/:</li>
-<li>Distinguir, buscar y utilizar apropiadamente datos abiertos y de acceso abierto:</li>
-<li>Organizar mi trabajo para producir y reportar resultados reproducibles:</li>
-<li>Generar reportes que compartan los datos y los algoritmos que usé para producirlo, con un ánimo de ciencia abierta:</li>
-<li>Cuidar de utilizar y defender valores de ciencia abierta en mi trabajo profesional:</li>
-<li>Escribir mi texto con Markdown usando marcas de formato, ligas e ilustraciones:</li>
-<li>Distinguir y manejar apropiadamente la sección de encabezado YAML de un documento (controlando las opciones y metadatos) y el resto del texto desarrollado con Markdown:</li>
-<li>Editar apropiadamente los distintos tipos de archivos de mi proyecto (yaml, qmd, posts, etc):</li>
+<li>Estructurar mis documentos considerando la perspectiva de narrativa de datos.</li>
+<li>Defender mi propia opinión en relación con la crisis de la reproducibilidad.</li>
+<li>Crear un proyecto en RStudio que tenga a Quarto habilitado.</li>
+<li>Utilizar un blog como una bitácora de control de mi proyecto académico, que puedo compartir.</li>
+<li>Habilitar y manejar comentarios mediante http://hypothes.is/.</li>
+<li>Distinguir, buscar y utilizar apropiadamente datos abiertos y de acceso abierto.</li>
+<li>Organizar mi trabajo para producir y reportar resultados reproducibles.</li>
+<li>Generar reportes que compartan los datos y los algoritmos que usé para producirlo, con un ánimo de ciencia abierta.</li>
+<li>Cuidar de utilizar y defender valores de ciencia abierta en mi trabajo profesional.</li>
+<li>Escribir mi texto con Markdown usando marcas de formato, ligas e ilustraciones.</li>
+<li>Distinguir y manejar apropiadamente la sección de encabezado YAML de un documento (controlando las opciones y metadatos) y el resto del texto desarrollado con Markdown.</li>
+<li>Editar apropiadamente los distintos tipos de archivos de mi proyecto (yaml, qmd, posts, etc).</li>
 <li>Habilitar git en RStudio</li>
-<li>Vincular mi proyecto con un “almacén” en la nube con Github:</li>
+<li>Vincular mi proyecto con un “almacén” en la nube con Github.</li>
 <li>Publicar continuamente mis documentos en la Web con ayuda de Netlify</li>
-<li>Operar rutinariamente en RStudio con respaldo en Git: commit-pull-push:</li>
-<li>Incluir en mi texto “trozos” de código (lectura de datos, análisis, graficación):</li>
-<li>Usar referencias cruzadas en mi texto (figuras, cuadros, definiciones, etc.):</li>
-<li>Anotar en mi texto citas bibliográficas e incluir la lista de literatura automáticamente:</li>
-<li>Utilizar Markdown para producir textos en formato MS-Word o PDF como “artículo científico”:</li>
-<li>Producir documentos para “presentación web” con Reveal.JS:</li>
-<li>Crear nuevas ramas para trabajar sin afectar la línea de producción de mi proyecto:</li>
-<li>Recuperar estados previos de mi espacio de trabajo desde git:</li>
-<li>Reunir una rama de git con la principal de producción:</li>
-<li>Operar un “pull request” como medio de colaboración con respaldo en Github:</li>
+<li>Operar rutinariamente en RStudio con respaldo en Git: <em>commit-pull-push</em>.</li>
+<li>Incluir en mi texto “trozos” de código (lectura de datos, análisis, graficación).</li>
+<li>Usar referencias cruzadas en mi texto (figuras, cuadros, definiciones, etc.).</li>
+<li>Anotar en mi texto citas bibliográficas e incluir la lista de literatura automáticamente.</li>
+<li>Utilizar Markdown para producir textos en formato MS-Word o PDF como “artículo científico”.</li>
+<li>Producir documentos para “presentación web” con Reveal.JS.</li>
+<li>Crear nuevas ramas para trabajar sin afectar la línea de producción de mi proyecto.</li>
+<li>Recuperar estados previos de mi espacio de trabajo desde git.</li>
+<li>Reunir una rama de git con la principal de producción.</li>
+<li>Operar un “pull request” como medio de colaboración con respaldo en Github.</li>
 </ol>
 
 

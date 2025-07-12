@@ -1,0 +1,15 @@
+book:
+  chapters:
+    - index.qmd
+    - primeros-pasos.qmd
+    - git-basico.qmd
+    - netlify-preparar.qmd
+    - preparar-datos.qmd
+    - analisis-estadistico.qmd
+    - graficos.qmd
+    - datos-geoespaciales.qmd
+    - analisis-geoespacial.qmd
+    - mapas.qmd
+    - resumen.qmd
+    - referencias.qmd
+      

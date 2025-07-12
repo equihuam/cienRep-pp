@@ -13,8 +13,10 @@ lightbox: true
 citation: 
   type: book
   
-
 book:
+  navbar: 
+    title: "**Aviso** - [requisitos posgrado](posgrado/requerimientos-posgrado.html)"
+
   title: "Ciencia reproducible para la política pública"
   author:
      - name: Miguel Equihua Zamora
@@ -24,21 +26,12 @@ book:
   date: "5/7/2025"
   downloads: [pdf]
   favicon: img/box-2071537_640.png
-  chapters:
-    - index.qmd
-    - primeros-pasos.qmd
-    - git-basico.qmd
-    - netlify-preparar.qmd
-    - preparar-datos.qmd
-    - analisis-estadistico.qmd
-    - graficos.qmd
-    - datos-geoespaciales.qmd
-    - analisis-geoespacial.qmd
-    - mapas.qmd
-    - resumen.qmd
-    - referencias.qmd
-    
   cover-image: img/leaves-2874583_1280.jpg
+  
+profile: 
+  default: completo
+  group: [completo,posgrado]
+
 
 format:
   html:
