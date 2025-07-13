@@ -15,7 +15,7 @@ citation:
   
 book:
   navbar: 
-    title: "**Aviso** - [requisitos posgrado](posgrado/requerimientos-posgrado.html)"
+    title: "**Aviso** - [[requisitos posgrado]{style='color: blue'}](requerimientos-posgrado.qmd)"
 
   title: "Ciencia reproducible para la política pública"
   author:
@@ -29,7 +29,7 @@ book:
   cover-image: img/leaves-2874583_1280.jpg
   
 profile: 
-  default: completo
+  default: posgrado
   group: [completo,posgrado]
 
 

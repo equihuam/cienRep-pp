@@ -1,0 +1,11 @@
+section#footnotes {
+  display: none !important;
+}
+
+.navbar .a {
+  color: blue;
+}
+
+#quarto-appendix.default {
+    border-top: none !important;
+}

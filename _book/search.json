@@ -118,5 +118,104 @@
     "crumbs": [
       "Referencias"
     ]
+  },
+  {
+    "objectID": "requerimientos-posgrado.html",
+    "href": "requerimientos-posgrado.html",
+    "title": "Apéndice A — Requisitos para el posgrado",
+    "section": "",
+    "text": "A.1 Coordinadores",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Requisitos para el posgrado</span>"
+    ]
+  },
+  {
+    "objectID": "requerimientos-posgrado.html#coordinadores",
+    "href": "requerimientos-posgrado.html#coordinadores",
+    "title": "Apéndice A — Requisitos para el posgrado",
+    "section": "",
+    "text": "Miguel Equihua Zamora\nOctavio Pérez-Maqueo\nElio Lagunes Díaz",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Requisitos para el posgrado</span>"
+    ]
+  },
+  {
+    "objectID": "requerimientos-posgrado.html#profesores-invitados",
+    "href": "requerimientos-posgrado.html#profesores-invitados",
+    "title": "Apéndice A — Requisitos para el posgrado",
+    "section": "A.2 Profesores invitados",
+    "text": "A.2 Profesores invitados",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Requisitos para el posgrado</span>"
+    ]
+  },
+  {
+    "objectID": "requerimientos-posgrado.html#datos-generales",
+    "href": "requerimientos-posgrado.html#datos-generales",
+    "title": "Apéndice A — Requisitos para el posgrado",
+    "section": "A.3 Datos Generales",
+    "text": "A.3 Datos Generales\n\nNombre: Ciencia reproducible para la política pública\nSede: Xalapa, Veracruz\nHoras (minimo 30):\nCréditos (1 por 10 horas):\nTipo: OP\nCupo mínimo1:\nCupo máximo:\nPrecio al público sugerido por el Coordinador2:\nFecha inicio:\nFecha fin:\nPeriodo:\nHora Inicio:\nHora Fin:\nDescripción del horario:\nFecha Inicio de Inscripción Externos:\nFecha Límite Inscripción Externos:\n\n\nA.3.1 Notas\n\nDirigidas al CAP:\nDirigidas al personal administrativo:\nDirigidas al estudiante:",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Requisitos para el posgrado</span>"
+    ]
+  },
+  {
+    "objectID": "requerimientos-posgrado.html#materiales",
+    "href": "requerimientos-posgrado.html#materiales",
+    "title": "Apéndice A — Requisitos para el posgrado",
+    "section": "A.4 Materiales",
+    "text": "A.4 Materiales",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Requisitos para el posgrado</span>"
+    ]
+  },
+  {
+    "objectID": "requerimientos-posgrado.html#gastos",
+    "href": "requerimientos-posgrado.html#gastos",
+    "title": "Apéndice A — Requisitos para el posgrado",
+    "section": "A.5 Gastos",
+    "text": "A.5 Gastos\n\nGastos operativos:\nGastos invitados:\nGastos prácticas de campo:\nMobiliario y equipo:\nOtros gastos:",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Requisitos para el posgrado</span>"
+    ]
+  },
+  {
+    "objectID": "requerimientos-posgrado.html#contenido",
+    "href": "requerimientos-posgrado.html#contenido",
+    "title": "Apéndice A — Requisitos para el posgrado",
+    "section": "A.6 Contenido",
+    "text": "A.6 Contenido\n\nA.6.1 Presentación\n\n\nA.6.2 Objetivo\n\n\nA.6.3 Objetivos específicos\n\n\nA.6.4 Metodología\n\n\nA.6.5 Prerequisitos\n\n\nA.6.6 Habilidades y destrezas requeridas\n\n\nA.6.7 Habilidades y destrezas por adquirir\n\nEstructurar mis documentos considerando la perspectiva de narrativa de datos.\nDefender mi propia opinión en relación con la crisis de la reproducibilidad.\nCrear un proyecto en RStudio que tenga a Quarto habilitado.\nUtilizar un blog como una bitácora de control de mi proyecto académico, que puedo compartir.\nHabilitar y manejar comentarios mediante http://hypothes.is/.\nDistinguir, buscar y utilizar apropiadamente datos abiertos y de acceso abierto.\nOrganizar mi trabajo para producir y reportar resultados reproducibles.\nGenerar reportes que compartan los datos y los algoritmos que usé para producirlo, con un ánimo de ciencia abierta.\nCuidar de utilizar y defender valores de ciencia abierta en mi trabajo profesional.\nEscribir mi texto con Markdown usando marcas de formato, ligas e ilustraciones.\nDistinguir y manejar apropiadamente la sección de encabezado YAML de un documento (controlando las opciones y metadatos) y el resto del texto desarrollado con Markdown.\nEditar apropiadamente los distintos tipos de archivos de mi proyecto (yaml, qmd, posts, etc).\nHabilitar git en RStudio\nVincular mi proyecto con un “almacén” en la nube con Github.\nPublicar continuamente mis documentos en la Web con ayuda de Netlify\nOperar rutinariamente en RStudio con respaldo en Git: commit-pull-push.\nIncluir en mi texto “trozos” de código (lectura de datos, análisis, graficación).\nUsar referencias cruzadas en mi texto (figuras, cuadros, definiciones, etc.).\nAnotar en mi texto citas bibliográficas e incluir la lista de literatura automáticamente.\nUtilizar Markdown para producir textos en formato MS-Word o PDF como “artículo científico”.\nProducir documentos para “presentación web” con Reveal.JS.\nCrear nuevas ramas para trabajar sin afectar la línea de producción de mi proyecto.\nRecuperar estados previos de mi espacio de trabajo desde git.\nReunir una rama de git con la principal de producción.\nOperar un “pull request” como medio de colaboración con respaldo en Github.\n\n\n\nA.6.8 Criterios de calificación\n\n\nA.6.9 Contenido temático\n\nUso de Quarto. Lo proponemos como base de encuentro de la producción de contenido en texto, análisis computacional y gráficos de datos, en un sólo espacio.\nUso de Git, Github y Netlify. Se trata de recursos convenientes para el control del proceso de desarrollo de contenidos y para la publicación en línea.\nIntroducción al uso del lenguaje R como base de construcción de algoritmos computacionales para análisis de datos.\nUso de R para el procesamiento de datos geoespaciales, análisis de cartografía y producción de mapas.",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Requisitos para el posgrado</span>"
+    ]
+  },
+  {
+    "objectID": "requerimientos-posgrado.html#bibliografía",
+    "href": "requerimientos-posgrado.html#bibliografía",
+    "title": "Apéndice A — Requisitos para el posgrado",
+    "section": "A.7 Bibliografía",
+    "text": "A.7 Bibliografía\n\nTurner, S. (2025). Writing a book with Quarto. http://dx.doi.org/10.59350/9qj3c-7t040",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Requisitos para el posgrado</span>"
+    ]
+  },
+  {
+    "objectID": "requerimientos-posgrado.html#footnotes",
+    "href": "requerimientos-posgrado.html#footnotes",
+    "title": "Apéndice A — Requisitos para el posgrado",
+    "section": "",
+    "text": "Se requieren 4 para abrir el curso por parte del Posgrado. El profesor puede establecer el número mínimo para su curso↩︎\nCosto estimado por el sistema de acuerdo al MOP $ 1,125.00↩︎",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Requisitos para el posgrado</span>"
+    ]
   }
 ]

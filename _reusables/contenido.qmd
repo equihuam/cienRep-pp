@@ -1,0 +1,12 @@
+
+1.  Uso de *Quarto*. Lo proponemos como base de encuentro de la
+    producción de contenido en texto, análisis computacional y gráficos
+    de datos, en un sólo espacio.
+2.  Uso de *Git*, [Github](http://www.github.com) y
+    [Netlify](http://www.netlify.com). Se trata de recursos convenientes
+    para el control del proceso de desarrollo de contenidos y para la
+    publicación en línea.
+3.  Introducción al uso del *lenguaje R* como base de construcción de
+    algoritmos computacionales para análisis de datos.
+4.  Uso de *R* para el procesamiento de datos geoespaciales, análisis de
+    cartografía y producción de mapas.

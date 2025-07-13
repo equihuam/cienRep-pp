@@ -1,13 +1,15 @@
 ---
 title: "Requisitos para el posgrado"
-editor: visual
 
-output-dir:  _book/posgrado
+css: posgrado.css
 
 bibliography: lecturas-sugeridas.bib
 
 nocite: |
   @turner2025
+
+engine: knitr
+
 ---
 
 ```{r}
@@ -39,8 +41,7 @@ libro <- metadatos$book
 -   Tipo: OP
 -   Cupo mínimo[^requerimientos-posgrado-1]:
 -   Cupo máximo:
--   Precio al público sugerido por el
-    Coordinador[^requerimientos-posgrado-2]:
+-   Precio al público sugerido por el Coordinador[^requerimientos-posgrado-2]:
 -   Fecha inicio:
 -   Fecha fin:
 -   Periodo:
@@ -89,11 +90,15 @@ libro <- metadatos$book
 
 ### Habilidades y destrezas por adquirir
 
+{{< include _reusables/habilidades.qmd >}}
+
 ### Criterios de calificación
 
 ### Contenido temático
 
-### Bibliografía
+{{< include _reusables/contenido.qmd >}}
 
-::: {#ref}
+::: {#refs}
+## Bibliografía 
+
 :::

@@ -1,0 +1,102 @@
+---
+title: "Requisitos para el posgrado"
+
+css: posgrado.css
+
+bibliography: lecturas-sugeridas.bib
+
+nocite: |
+  @turner2025
+
+engine: knitr
+
+---
+
+```{r}
+#| label: metadatos
+#| include: false
+#| echo: false
+
+
+metadatos <- yaml::read_yaml("_quarto.yml")
+
+libro <- metadatos$book
+
+```
+
+## Coordinadores
+
+-   `{r} libro$author[[1]]$name`
+-   `{r} libro$author[[2]]$name`
+-   `{r} libro$author[[3]]$name`
+
+## Profesores invitados
+
+## Datos Generales
+
+-   Nombre: `{r} libro$title`
+-   Sede: Xalapa, Veracruz
+-   Horas (minimo 30):
+-   Créditos (1 por 10 horas):
+-   Tipo: OP
+-   Cupo mínimo[^requerimientos-posgrado-1]:
+-   Cupo máximo:
+-   Precio al público sugerido por el Coordinador[^requerimientos-posgrado-2]:
+-   Fecha inicio:
+-   Fecha fin:
+-   Periodo:
+-   Hora Inicio:
+-   Hora Fin:
+-   Descripción del horario:
+-   Fecha Inicio de Inscripción Externos:
+-   Fecha Límite Inscripción Externos:
+
+[^requerimientos-posgrado-1]: **Se requieren 4 para abrir el curso por
+    parte del Posgrado**. El profesor puede establecer el número mínimo
+    para su curso
+
+[^requerimientos-posgrado-2]: **Costo estimado por el sistema de acuerdo
+    al MOP** \$ 1,125.00
+
+### Notas
+
+-   Dirigidas al CAP:
+-   Dirigidas al personal administrativo:
+-   Dirigidas al estudiante:
+
+## Materiales
+
+## Gastos
+
+-   Gastos operativos:
+-   Gastos invitados:
+-   Gastos prácticas de campo:
+-   Mobiliario y equipo:
+-   Otros gastos:
+
+## Contenido
+
+### Presentación
+
+### Objetivo
+
+### Objetivos específicos
+
+### Metodología
+
+### Prerequisitos
+
+### Habilidades y destrezas requeridas
+
+### Habilidades y destrezas por adquirir
+
+{{< include _reusables/habilidades.qmd >}}
+
+### Criterios de calificación
+
+### Contenido temático
+
+::: {#refs}
+## Bibliografía 
+
+:::
